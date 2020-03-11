@@ -1,0 +1,13 @@
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\bin\Debug\CuenasPorCobrar.exe.config
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\bin\Debug\CuenasPorCobrar.exe
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\bin\Debug\CuenasPorCobrar.pdb
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.csprojAssemblyReference.cache
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.Properties.Resources.resources
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.csproj.GenerateResource.cache
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.exe
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.pdb
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.Form1.resources
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.csproj.CopyComplete
+C:\Users\diazw\source\repos\CuenasPorCobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelAdminSistema.resources
