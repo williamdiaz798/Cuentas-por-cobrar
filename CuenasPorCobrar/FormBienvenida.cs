@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CuenasPorCobrar.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,6 +45,7 @@ namespace CuenasPorCobrar
         private void FormBienvenida_Load(object sender, EventArgs e)
         {
             this.Opacity = 0.0;
+            LblUsuarioN.Text = DatosUsuario.NombreUsuario;
             CircubarBienve.Value = 0;
             CircubarBienve.Minimum = 0;
             CircubarBienve.Maximum = 100;

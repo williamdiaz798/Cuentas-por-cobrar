@@ -29,26 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelAdminSistema));
             this.PanelOperador = new System.Windows.Forms.Panel();
+            this.BtnMinimisar = new System.Windows.Forms.Button();
             this.BtnIndex = new System.Windows.Forms.Button();
             this.PanelClien = new System.Windows.Forms.Panel();
             this.BtnBucar = new System.Windows.Forms.Button();
+            this.BtnClien = new System.Windows.Forms.Button();
             this.TimerClien = new System.Windows.Forms.Timer(this.components);
             this.PanelCPV = new System.Windows.Forms.Panel();
             this.BtnEstadoCPV = new System.Windows.Forms.Button();
             this.BtnClienCPV = new System.Windows.Forms.Button();
+            this.BtnCPV = new System.Windows.Forms.Button();
             this.TimerCPV = new System.Windows.Forms.Timer(this.components);
             this.BtnCV = new System.Windows.Forms.Button();
             this.PanelHClien = new System.Windows.Forms.Panel();
             this.BtnTInteres = new System.Windows.Forms.Button();
             this.BtnCuentaH = new System.Windows.Forms.Button();
             this.BtnClienteH = new System.Windows.Forms.Button();
+            this.BtnHistorial = new System.Windows.Forms.Button();
             this.TimerHistorial = new System.Windows.Forms.Timer(this.components);
             this.BtnSalir = new System.Windows.Forms.Button();
-            this.BtnHistorial = new System.Windows.Forms.Button();
-            this.BtnCPV = new System.Windows.Forms.Button();
-            this.BtnClien = new System.Windows.Forms.Button();
-            this.BtnMinimisar = new System.Windows.Forms.Button();
             this.PanelOperador.SuspendLayout();
             this.PanelClien.SuspendLayout();
             this.PanelCPV.SuspendLayout();
@@ -63,6 +64,24 @@
             this.PanelOperador.Name = "PanelOperador";
             this.PanelOperador.Size = new System.Drawing.Size(1200, 30);
             this.PanelOperador.TabIndex = 0;
+            // 
+            // BtnMinimisar
+            // 
+            this.BtnMinimisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnMinimisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMinimisar.FlatAppearance.BorderSize = 0;
+            this.BtnMinimisar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnMinimisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnMinimisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMinimisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMinimisar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnMinimisar.Image = global::CuenasPorCobrar.Properties.Resources.less16;
+            this.BtnMinimisar.Location = new System.Drawing.Point(1133, 0);
+            this.BtnMinimisar.Name = "BtnMinimisar";
+            this.BtnMinimisar.Size = new System.Drawing.Size(35, 30);
+            this.BtnMinimisar.TabIndex = 14;
+            this.BtnMinimisar.UseVisualStyleBackColor = false;
+            this.BtnMinimisar.Click += new System.EventHandler(this.BtnMinimisar_Click);
             // 
             // BtnIndex
             // 
@@ -111,6 +130,27 @@
             this.BtnBucar.TabIndex = 8;
             this.BtnBucar.Text = "Buscar";
             this.BtnBucar.UseVisualStyleBackColor = false;
+            // 
+            // BtnClien
+            // 
+            this.BtnClien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnClien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnClien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnClien.FlatAppearance.BorderSize = 0;
+            this.BtnClien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnClien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnClien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClien.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnClien.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
+            this.BtnClien.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnClien.Location = new System.Drawing.Point(0, 0);
+            this.BtnClien.Name = "BtnClien";
+            this.BtnClien.Size = new System.Drawing.Size(130, 30);
+            this.BtnClien.TabIndex = 7;
+            this.BtnClien.Text = "Cliente    ";
+            this.BtnClien.UseVisualStyleBackColor = false;
+            this.BtnClien.Click += new System.EventHandler(this.button1_Click);
             // 
             // TimerClien
             // 
@@ -169,6 +209,27 @@
             this.BtnClienCPV.Text = "Cliente";
             this.BtnClienCPV.UseVisualStyleBackColor = false;
             // 
+            // BtnCPV
+            // 
+            this.BtnCPV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnCPV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCPV.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCPV.FlatAppearance.BorderSize = 0;
+            this.BtnCPV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnCPV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnCPV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCPV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCPV.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnCPV.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
+            this.BtnCPV.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCPV.Location = new System.Drawing.Point(0, 0);
+            this.BtnCPV.Name = "BtnCPV";
+            this.BtnCPV.Size = new System.Drawing.Size(195, 30);
+            this.BtnCPV.TabIndex = 8;
+            this.BtnCPV.Text = "Cuentas por Cobrar   ";
+            this.BtnCPV.UseVisualStyleBackColor = false;
+            this.BtnCPV.Click += new System.EventHandler(this.BtnCPV_Click);
+            // 
             // TimerCPV
             // 
             this.TimerCPV.Interval = 15;
@@ -186,7 +247,7 @@
             this.BtnCV.ForeColor = System.Drawing.Color.Gainsboro;
             this.BtnCV.Location = new System.Drawing.Point(421, 0);
             this.BtnCV.Name = "BtnCV";
-            this.BtnCV.Size = new System.Drawing.Size(149, 30);
+            this.BtnCV.Size = new System.Drawing.Size(160, 30);
             this.BtnCV.TabIndex = 9;
             this.BtnCV.Text = "Cuentas Vencidas";
             this.BtnCV.UseVisualStyleBackColor = false;
@@ -197,7 +258,7 @@
             this.PanelHClien.Controls.Add(this.BtnCuentaH);
             this.PanelHClien.Controls.Add(this.BtnClienteH);
             this.PanelHClien.Controls.Add(this.BtnHistorial);
-            this.PanelHClien.Location = new System.Drawing.Point(575, 0);
+            this.PanelHClien.Location = new System.Drawing.Point(585, 0);
             this.PanelHClien.MaximumSize = new System.Drawing.Size(150, 120);
             this.PanelHClien.MinimumSize = new System.Drawing.Size(150, 30);
             this.PanelHClien.Name = "PanelHClien";
@@ -261,6 +322,27 @@
             this.BtnClienteH.Text = "Cliente";
             this.BtnClienteH.UseVisualStyleBackColor = false;
             // 
+            // BtnHistorial
+            // 
+            this.BtnHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnHistorial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnHistorial.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnHistorial.FlatAppearance.BorderSize = 0;
+            this.BtnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnHistorial.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnHistorial.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
+            this.BtnHistorial.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnHistorial.Location = new System.Drawing.Point(0, 0);
+            this.BtnHistorial.Name = "BtnHistorial";
+            this.BtnHistorial.Size = new System.Drawing.Size(150, 30);
+            this.BtnHistorial.TabIndex = 9;
+            this.BtnHistorial.Text = "Historial";
+            this.BtnHistorial.UseVisualStyleBackColor = false;
+            this.BtnHistorial.Click += new System.EventHandler(this.BtnHistorial_Click);
+            // 
             // TimerHistorial
             // 
             this.TimerHistorial.Interval = 15;
@@ -284,87 +366,6 @@
             this.BtnSalir.UseVisualStyleBackColor = false;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
-            // BtnHistorial
-            // 
-            this.BtnHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnHistorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnHistorial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnHistorial.FlatAppearance.BorderSize = 0;
-            this.BtnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BtnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnHistorial.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnHistorial.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
-            this.BtnHistorial.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnHistorial.Location = new System.Drawing.Point(0, 0);
-            this.BtnHistorial.Name = "BtnHistorial";
-            this.BtnHistorial.Size = new System.Drawing.Size(150, 30);
-            this.BtnHistorial.TabIndex = 9;
-            this.BtnHistorial.Text = "Historial";
-            this.BtnHistorial.UseVisualStyleBackColor = false;
-            this.BtnHistorial.Click += new System.EventHandler(this.BtnHistorial_Click);
-            // 
-            // BtnCPV
-            // 
-            this.BtnCPV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnCPV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCPV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnCPV.FlatAppearance.BorderSize = 0;
-            this.BtnCPV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnCPV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BtnCPV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCPV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCPV.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnCPV.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
-            this.BtnCPV.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCPV.Location = new System.Drawing.Point(0, 0);
-            this.BtnCPV.Name = "BtnCPV";
-            this.BtnCPV.Size = new System.Drawing.Size(195, 30);
-            this.BtnCPV.TabIndex = 8;
-            this.BtnCPV.Text = "Cuentas por Cobrar";
-            this.BtnCPV.UseVisualStyleBackColor = false;
-            this.BtnCPV.Click += new System.EventHandler(this.BtnCPV_Click);
-            // 
-            // BtnClien
-            // 
-            this.BtnClien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnClien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnClien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnClien.FlatAppearance.BorderSize = 0;
-            this.BtnClien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnClien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BtnClien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClien.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnClien.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
-            this.BtnClien.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnClien.Location = new System.Drawing.Point(0, 0);
-            this.BtnClien.Name = "BtnClien";
-            this.BtnClien.Size = new System.Drawing.Size(130, 30);
-            this.BtnClien.TabIndex = 7;
-            this.BtnClien.Text = "Cliente";
-            this.BtnClien.UseVisualStyleBackColor = false;
-            this.BtnClien.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // BtnMinimisar
-            // 
-            this.BtnMinimisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnMinimisar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinimisar.FlatAppearance.BorderSize = 0;
-            this.BtnMinimisar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnMinimisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BtnMinimisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMinimisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMinimisar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnMinimisar.Image = global::CuenasPorCobrar.Properties.Resources.less16;
-            this.BtnMinimisar.Location = new System.Drawing.Point(1133, 0);
-            this.BtnMinimisar.Name = "BtnMinimisar";
-            this.BtnMinimisar.Size = new System.Drawing.Size(35, 30);
-            this.BtnMinimisar.TabIndex = 14;
-            this.BtnMinimisar.UseVisualStyleBackColor = false;
-            this.BtnMinimisar.Click += new System.EventHandler(this.BtnMinimisar_Click);
-            // 
             // PanelAdminSistema
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -377,6 +378,7 @@
             this.Controls.Add(this.BtnIndex);
             this.Controls.Add(this.PanelOperador);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PanelAdminSistema";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

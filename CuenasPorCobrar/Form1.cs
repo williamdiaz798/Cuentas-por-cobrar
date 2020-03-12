@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CuenasPorCobrar.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace CuenasPorCobrar
     public partial class Form1 : Form
     {
         PanelAdminSistema panelAdmin = new PanelAdminSistema();
+        FormBienvenida bienvenida = new FormBienvenida();
 
         public Form1()
         {
@@ -40,7 +42,7 @@ namespace CuenasPorCobrar
                 if (TxtUsuario.Text == "Will Diaz" && TxtContra.Text == "Asdf1234")
                 {
                     this.Hide();
-                    FormBienvenida bienvenida = new FormBienvenida();
+                    DatosUsuario.NombreUsuario = TxtUsuario.Text;
                     bienvenida.ShowDialog();
                     panelAdmin.Show();
                 }
