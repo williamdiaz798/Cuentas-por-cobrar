@@ -39,14 +39,26 @@ namespace CuenasPorCobrar
             {
                 if (TxtUsuario.Text == "Will Diaz" && TxtContra.Text == "Asdf1234")
                 {
-                    panelAdmin.Show();
                     this.Hide();
+                    FormBienvenida bienvenida = new FormBienvenida();
+                    bienvenida.ShowDialog();
+                    panelAdmin.Show();
                 }
                 else
                 {
                     MessageBox.Show("Datos Incorrectos");
                 }
             }
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BtnMinimisar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

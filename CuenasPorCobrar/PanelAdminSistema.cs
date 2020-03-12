@@ -67,6 +67,11 @@ namespace CuenasPorCobrar
             Application.Exit();
         }
 
+        private void BtnMinimisar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
         private void TimerHistorial_Tick(object sender, EventArgs e)
         {
             if (isCollapseH)

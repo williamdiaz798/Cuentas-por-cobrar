@@ -36,6 +36,8 @@
             this.LblContra = new System.Windows.Forms.Label();
             this.TxtContra = new System.Windows.Forms.TextBox();
             this.BtnLogin = new System.Windows.Forms.Button();
+            this.BtnMinimisar = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // shapeContainer1
@@ -70,7 +72,7 @@
             // 
             // TxtUsuario
             // 
-            this.TxtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.TxtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.TxtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,7 +106,7 @@
             // 
             // TxtContra
             // 
-            this.TxtContra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.TxtContra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.TxtContra.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtContra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -133,12 +135,50 @@
             this.BtnLogin.UseVisualStyleBackColor = false;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
+            // BtnMinimisar
+            // 
+            this.BtnMinimisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnMinimisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMinimisar.FlatAppearance.BorderSize = 0;
+            this.BtnMinimisar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnMinimisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnMinimisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMinimisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMinimisar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnMinimisar.Image = global::CuenasPorCobrar.Properties.Resources.less16;
+            this.BtnMinimisar.Location = new System.Drawing.Point(361, 0);
+            this.BtnMinimisar.Name = "BtnMinimisar";
+            this.BtnMinimisar.Size = new System.Drawing.Size(35, 30);
+            this.BtnMinimisar.TabIndex = 13;
+            this.BtnMinimisar.UseVisualStyleBackColor = false;
+            this.BtnMinimisar.Click += new System.EventHandler(this.BtnMinimisar_Click);
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSalir.FlatAppearance.BorderSize = 0;
+            this.BtnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalir.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnSalir.Image = global::CuenasPorCobrar.Properties.Resources.close16;
+            this.BtnSalir.Location = new System.Drawing.Point(396, 0);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(35, 30);
+            this.BtnSalir.TabIndex = 12;
+            this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(431, 306);
+            this.Controls.Add(this.BtnMinimisar);
+            this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.LblContra);
             this.Controls.Add(this.TxtContra);
@@ -166,6 +206,8 @@
         private System.Windows.Forms.Label LblContra;
         private System.Windows.Forms.TextBox TxtContra;
         private System.Windows.Forms.Button BtnLogin;
+        private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Button BtnMinimisar;
     }
 }
 

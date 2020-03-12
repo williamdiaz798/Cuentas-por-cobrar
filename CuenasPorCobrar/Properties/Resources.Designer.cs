@@ -103,9 +103,49 @@ namespace CuenasPorCobrar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close16 {
+            get {
+                object obj = ResourceManager.GetObject("close16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cuentas_por_paga_750_500 {
+            get {
+                object obj = ResourceManager.GetObject("cuentas-por-paga-750-500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download24 {
             get {
                 object obj = ResourceManager.GetObject("download24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap less16 {
+            get {
+                object obj = ResourceManager.GetObject("less16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap money64 {
+            get {
+                object obj = ResourceManager.GetObject("money64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
