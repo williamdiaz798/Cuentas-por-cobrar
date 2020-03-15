@@ -46,11 +46,11 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 100);
+            this.panel1.Size = new System.Drawing.Size(1000, 100);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox2
@@ -66,36 +66,36 @@
             // LblTitulo
             // 
             this.LblTitulo.AutoSize = true;
-            this.LblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.LblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTitulo.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.LblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.LblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTitulo.ForeColor = System.Drawing.Color.White;
             this.LblTitulo.Location = new System.Drawing.Point(121, 31);
             this.LblTitulo.Name = "LblTitulo";
-            this.LblTitulo.Size = new System.Drawing.Size(252, 31);
+            this.LblTitulo.Size = new System.Drawing.Size(353, 31);
             this.LblTitulo.TabIndex = 1;
-            this.LblTitulo.Text = "Cuentas por Cobrar";
+            this.LblTitulo.Text = "CUENTAS POR COBRAR";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(587, 140);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(599, 140);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(320, 55);
+            this.label1.Size = new System.Drawing.Size(330, 55);
             this.label1.TabIndex = 3;
             this.label1.Text = "BIENVENIDO";
             // 
             // LblUsuarioN
             // 
             this.LblUsuarioN.AutoSize = true;
-            this.LblUsuarioN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.LblUsuarioN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.LblUsuarioN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LblUsuarioN.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUsuarioN.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.LblUsuarioN.Location = new System.Drawing.Point(666, 205);
+            this.LblUsuarioN.ForeColor = System.Drawing.Color.White;
+            this.LblUsuarioN.Location = new System.Drawing.Point(693, 205);
             this.LblUsuarioN.Name = "LblUsuarioN";
             this.LblUsuarioN.Size = new System.Drawing.Size(155, 33);
             this.LblUsuarioN.TabIndex = 4;
@@ -132,13 +132,13 @@
             this.CircubarBienve.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.CircubarBienve.InnerMargin = 2;
             this.CircubarBienve.InnerWidth = -1;
-            this.CircubarBienve.Location = new System.Drawing.Point(652, 369);
+            this.CircubarBienve.Location = new System.Drawing.Point(665, 369);
             this.CircubarBienve.MarqueeAnimationSpeed = 2000;
             this.CircubarBienve.Name = "CircubarBienve";
             this.CircubarBienve.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.CircubarBienve.OuterMargin = -25;
             this.CircubarBienve.OuterWidth = 26;
-            this.CircubarBienve.ProgressColor = System.Drawing.Color.CornflowerBlue;
+            this.CircubarBienve.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
             this.CircubarBienve.ProgressWidth = 25;
             this.CircubarBienve.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.CircubarBienve.Size = new System.Drawing.Size(200, 200);
@@ -159,8 +159,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(1200, 600);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.CircubarBienve);
             this.Controls.Add(this.LblUsuarioN);
             this.Controls.Add(this.label1);

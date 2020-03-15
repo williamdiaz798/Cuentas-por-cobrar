@@ -1,0 +1,8 @@
+Letra: 255; 255; 255
+pricipal: 35; 35; 35
+botones y barras principales: 30; 30; 30
+botones mouse down: 25; 25; 25
+botones mouse over: 40; 40; 40
+botones secundarios: 37; 37; 37
+botones secundarios mouse down: 35; 35; 35
+botones secundarios mouse over: 50; 50; 50

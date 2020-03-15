@@ -58,7 +58,7 @@
             // 
             // PanelOperador
             // 
-            this.PanelOperador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.PanelOperador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.PanelOperador.Controls.Add(this.BtnMinimisar);
             this.PanelOperador.Location = new System.Drawing.Point(0, 0);
             this.PanelOperador.Name = "PanelOperador";
@@ -67,7 +67,7 @@
             // 
             // BtnMinimisar
             // 
-            this.BtnMinimisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnMinimisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BtnMinimisar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnMinimisar.FlatAppearance.BorderSize = 0;
             this.BtnMinimisar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -85,19 +85,19 @@
             // 
             // BtnIndex
             // 
-            this.BtnIndex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnIndex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BtnIndex.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnIndex.FlatAppearance.BorderSize = 0;
             this.BtnIndex.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.BtnIndex.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnIndex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnIndex.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnIndex.ForeColor = System.Drawing.Color.White;
             this.BtnIndex.Location = new System.Drawing.Point(0, 0);
             this.BtnIndex.Name = "BtnIndex";
             this.BtnIndex.Size = new System.Drawing.Size(90, 30);
             this.BtnIndex.TabIndex = 6;
-            this.BtnIndex.Text = "Ingresar";
+            this.BtnIndex.Text = "Inicio";
             this.BtnIndex.UseVisualStyleBackColor = false;
             // 
             // PanelClien
@@ -114,12 +114,12 @@
             // 
             // BtnBucar
             // 
-            this.BtnBucar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.BtnBucar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnBucar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnBucar.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnBucar.FlatAppearance.BorderSize = 0;
-            this.BtnBucar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnBucar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnBucar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BtnBucar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.BtnBucar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBucar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBucar.ForeColor = System.Drawing.Color.Gainsboro;
@@ -133,7 +133,7 @@
             // 
             // BtnClien
             // 
-            this.BtnClien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnClien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BtnClien.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnClien.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnClien.FlatAppearance.BorderSize = 0;
@@ -141,7 +141,7 @@
             this.BtnClien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnClien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnClien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClien.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnClien.ForeColor = System.Drawing.Color.White;
             this.BtnClien.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
             this.BtnClien.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnClien.Location = new System.Drawing.Point(0, 0);
@@ -176,8 +176,8 @@
             this.BtnEstadoCPV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEstadoCPV.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnEstadoCPV.FlatAppearance.BorderSize = 0;
-            this.BtnEstadoCPV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnEstadoCPV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnEstadoCPV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BtnEstadoCPV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.BtnEstadoCPV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEstadoCPV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEstadoCPV.ForeColor = System.Drawing.Color.Gainsboro;
@@ -196,8 +196,8 @@
             this.BtnClienCPV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnClienCPV.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnClienCPV.FlatAppearance.BorderSize = 0;
-            this.BtnClienCPV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnClienCPV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnClienCPV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BtnClienCPV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.BtnClienCPV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnClienCPV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnClienCPV.ForeColor = System.Drawing.Color.Gainsboro;
@@ -211,7 +211,7 @@
             // 
             // BtnCPV
             // 
-            this.BtnCPV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnCPV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BtnCPV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnCPV.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnCPV.FlatAppearance.BorderSize = 0;
@@ -219,7 +219,7 @@
             this.BtnCPV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnCPV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCPV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCPV.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnCPV.ForeColor = System.Drawing.Color.White;
             this.BtnCPV.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
             this.BtnCPV.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCPV.Location = new System.Drawing.Point(0, 0);
@@ -237,14 +237,14 @@
             // 
             // BtnCV
             // 
-            this.BtnCV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnCV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BtnCV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnCV.FlatAppearance.BorderSize = 0;
             this.BtnCV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.BtnCV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnCV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCV.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnCV.ForeColor = System.Drawing.Color.White;
             this.BtnCV.Location = new System.Drawing.Point(421, 0);
             this.BtnCV.Name = "BtnCV";
             this.BtnCV.Size = new System.Drawing.Size(160, 30);
@@ -271,8 +271,8 @@
             this.BtnTInteres.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnTInteres.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnTInteres.FlatAppearance.BorderSize = 0;
-            this.BtnTInteres.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnTInteres.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnTInteres.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BtnTInteres.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.BtnTInteres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnTInteres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnTInteres.ForeColor = System.Drawing.Color.Gainsboro;
@@ -290,8 +290,8 @@
             this.BtnCuentaH.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnCuentaH.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnCuentaH.FlatAppearance.BorderSize = 0;
-            this.BtnCuentaH.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnCuentaH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnCuentaH.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BtnCuentaH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.BtnCuentaH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCuentaH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCuentaH.ForeColor = System.Drawing.Color.Gainsboro;
@@ -309,8 +309,8 @@
             this.BtnClienteH.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnClienteH.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnClienteH.FlatAppearance.BorderSize = 0;
-            this.BtnClienteH.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnClienteH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnClienteH.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BtnClienteH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.BtnClienteH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnClienteH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnClienteH.ForeColor = System.Drawing.Color.Gainsboro;
@@ -324,7 +324,7 @@
             // 
             // BtnHistorial
             // 
-            this.BtnHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BtnHistorial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnHistorial.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnHistorial.FlatAppearance.BorderSize = 0;
@@ -332,7 +332,7 @@
             this.BtnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnHistorial.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnHistorial.ForeColor = System.Drawing.Color.White;
             this.BtnHistorial.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
             this.BtnHistorial.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnHistorial.Location = new System.Drawing.Point(0, 0);
@@ -350,7 +350,7 @@
             // 
             // BtnSalir
             // 
-            this.BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BtnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSalir.FlatAppearance.BorderSize = 0;
             this.BtnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -368,7 +368,7 @@
             // 
             // PanelAdminSistema
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1200, 600);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.PanelHClien);
