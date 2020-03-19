@@ -162,10 +162,10 @@
             this.BtnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSalir.FlatAppearance.BorderSize = 0;
             this.BtnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnSalir.ForeColor = System.Drawing.Color.Red;
             this.BtnSalir.Image = global::CuenasPorCobrar.Properties.Resources.close16;
             this.BtnSalir.Location = new System.Drawing.Point(396, 0);
             this.BtnSalir.Name = "BtnSalir";

@@ -14,7 +14,9 @@ namespace CuenasPorCobrar
     public partial class Form1 : Form
     {
         PanelAdminSistema panelAdmin = new PanelAdminSistema();
+        PanelSuperAdmin panelSAdmin = new PanelSuperAdmin();
         FormBienvenida bienvenida = new FormBienvenida();
+        private int tipoUsuario = 0;
 
         public Form1()
         {
@@ -41,14 +43,27 @@ namespace CuenasPorCobrar
             {
                 if (TxtUsuario.Text == "Will Diaz" && TxtContra.Text == "Asdf1234")
                 {
-                    this.Hide();
-                    DatosUsuario.NombreUsuario = TxtUsuario.Text;
-                    bienvenida.ShowDialog();
-                    panelAdmin.Show();
+                    tipoUsuario = 2;
+                } else if (TxtUsuario.Text == "Emerson" && TxtContra.Text == "Asdf1234") 
+                {
+                    tipoUsuario = 1;
                 }
                 else
                 {
                     MessageBox.Show("Datos Incorrectos");
+                }
+
+                this.Hide();
+                DatosUsuario.NombreUsuario = TxtUsuario.Text;
+                bienvenida.ShowDialog();
+
+                if (tipoUsuario == 2)
+                {
+                    panelAdmin.Show();
+                }
+                else if(tipoUsuario == 1)
+                {
+                    panelSAdmin.Show();
                 }
             }
         }

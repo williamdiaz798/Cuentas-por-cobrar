@@ -26,3 +26,4 @@ C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\Cue
 C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.FormBienvenida.resources
 C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\bin\Debug\CircularProgressBar.dll
 C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\bin\Debug\WinFormAnimation.dll
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelSuperAdmin.resources
