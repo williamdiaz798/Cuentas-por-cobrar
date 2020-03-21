@@ -53,17 +53,20 @@ namespace CuenasPorCobrar
                     MessageBox.Show("Datos Incorrectos");
                 }
 
-                this.Hide();
-                DatosUsuario.NombreUsuario = TxtUsuario.Text;
-                bienvenida.ShowDialog();
+                if (tipoUsuario != 0)
+                {
+                    this.Hide();
+                    DatosUsuario.NombreUsuario = TxtUsuario.Text;
+                    bienvenida.ShowDialog();
 
-                if (tipoUsuario == 2)
-                {
-                    panelAdmin.Show();
-                }
-                else if(tipoUsuario == 1)
-                {
-                    panelSAdmin.Show();
+                    if (tipoUsuario == 2)
+                    {
+                        panelAdmin.Show();
+                    }
+                    else if (tipoUsuario == 1)
+                    {
+                        panelSAdmin.Show();
+                    }
                 }
             }
         }
