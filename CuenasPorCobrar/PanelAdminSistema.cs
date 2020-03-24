@@ -1,4 +1,7 @@
-﻿using CuenasPorCobrar.Properties;
+﻿using CuenasPorCobrar.PanelesOperador;
+using CuenasPorCobrar.PanelesOperador.Clientes;
+using CuenasPorCobrar.PanelesOperador.Cuentas;
+using CuenasPorCobrar.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -59,7 +62,7 @@ namespace CuenasPorCobrar
 
         private void BtnHistorial_Click(object sender, EventArgs e)
         {
-            TimerHistorial.Start();
+            
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
@@ -72,13 +75,28 @@ namespace CuenasPorCobrar
             WindowState = FormWindowState.Minimized;
         }
 
+        private void PanelAdminSistema_Load(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new InicioOperador());
+        }
+
+        private void BtnReporte_Click(object sender, EventArgs e)
+        {
+            TimerHistorial.Start();
+        }
+
+        private void BtnIndex_Click(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new InicioOperador());
+        }
+
         private void TimerHistorial_Tick(object sender, EventArgs e)
         {
             if (isCollapseH)
             {
-                BtnHistorial.Image = Resources.ArrowDown16;
-                PanelHClien.Height -= 10;
-                if (PanelHClien.Size == PanelHClien.MinimumSize)
+                BtnReporte.Image = Resources.ArrowDown16;
+                PanelReportes.Height -= 10;
+                if (PanelReportes.Size == PanelReportes.MinimumSize)
                 {
                     TimerHistorial.Stop();
                     isCollapseH = false;
@@ -86,14 +104,59 @@ namespace CuenasPorCobrar
             }
             else
             {
-                BtnHistorial.Image = Resources.ArrowUp16;
-                PanelHClien.Height += 10;
-                if (PanelHClien.Size == PanelHClien.MaximumSize)
+                BtnReporte.Image = Resources.ArrowUp16;
+                PanelReportes.Height += 10;
+                if (PanelReportes.Size == PanelReportes.MaximumSize)
                 {
                     TimerHistorial.Stop();
                     isCollapseH = true;
                 }
             }
+        }
+
+        private void BtnCACorriente_Click(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new ClientesCorriente());
+        }
+
+        private void BtnCMora_Click(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new ClientesMora());
+        }
+
+        private void BtnCTodos_Click(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new Clientes());
+        }
+
+        private void BtnCCrear_Click(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new ClientesAgregar());
+        }
+
+        private void BtnCuVence_Click(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new CuentasPVencer());
+        }
+
+        private void BtnCuVencidas_Click(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new CuentasVencidas());
+        }
+
+        private void BtnCuCrear_Click(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new CuentaCrear());
+        }
+
+        private void BtnCuPago_Click(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new CuentasPago());
+        }
+
+        private void BtnCuentasT_Click(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new Cuentas());
         }
 
         private void TimerCPV_Tick(object sender, EventArgs e)
@@ -119,5 +182,39 @@ namespace CuenasPorCobrar
                 }
             }
         }
+
+        //--------------------------------------------------------------------------------------------------------------
+        //Abrir paneles
+
+        private void AbrirFormInicio(object formInicio)
+        {
+            //TimerHistorial.Start();
+            //TimerCPV.Start();
+            //TimerClien.Start();
+
+            if (this.PanelContenedor.Controls.Count > 0)
+                this.PanelContenedor.Controls.RemoveAt(0);
+
+            Form FInicio = formInicio as Form;
+            FInicio.TopLevel = false;
+            FInicio.Dock = DockStyle.Fill;
+            this.PanelContenedor.Controls.Add(FInicio);
+            this.PanelContenedor.Tag = FInicio;
+            FInicio.Show();
+        }
+
+        //private void AbrirFormClienteACorriente(object formClienteCorriente)
+        //{
+        //    if (this.PanelContenedor.Controls.Count > 0)
+        //        this.PanelContenedor.Controls.RemoveAt(0);
+
+        //    Form FInicio = formClien as Form;
+        //    FInicio.TopLevel = false;
+        //    FInicio.Dock = DockStyle.Fill;
+        //    this.PanelContenedor.Controls.Add(FInicio);
+        //    this.PanelContenedor.Tag = FInicio;
+        //    FInicio.Show();
+        //}
     }
+
 }

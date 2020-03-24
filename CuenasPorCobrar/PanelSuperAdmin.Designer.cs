@@ -90,6 +90,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PanelSuperAdmin";
             this.Opacity = 0.95D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PanelSuperAdmin";
             this.Load += new System.EventHandler(this.PanelSuperAdmin_Load);
             this.PanelOperador.ResumeLayout(false);

@@ -27,3 +27,13 @@ C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\Cue
 C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\bin\Debug\CircularProgressBar.dll
 C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\bin\Debug\WinFormAnimation.dll
 C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelSuperAdmin.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.InicioOperador.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Clientes.ClientesCorriente.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Clientes.Clientes.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Clientes.ClientesAgregar.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Clientes.ClientesMora.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Cuentas.CuentaCrear.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Cuentas.Cuentas.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Cuentas.CuentasPVencer.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Cuentas.CuentasVencidas.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Cuentas.CuentasPago.resources
