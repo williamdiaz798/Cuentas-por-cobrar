@@ -99,6 +99,12 @@
     <Compile Include="PanelesOperador\Clientes\ClientesCorriente.Designer.cs">
       <DependentUpon>ClientesCorriente.cs</DependentUpon>
     </Compile>
+    <Compile Include="PanelesOperador\Clientes\ClientesDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelesOperador\Clientes\ClientesDetalle.Designer.cs">
+      <DependentUpon>ClientesDetalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="PanelesOperador\Clientes\ClientesMora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,12 @@
     </Compile>
     <Compile Include="PanelesOperador\Cuentas\Cuentas.Designer.cs">
       <DependentUpon>Cuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelesOperador\Cuentas\CuentasDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelesOperador\Cuentas\CuentasDetalle.Designer.cs">
+      <DependentUpon>CuentasDetalle.cs</DependentUpon>
     </Compile>
     <Compile Include="PanelesOperador\Cuentas\CuentasPago.cs">
       <SubType>Form</SubType>
@@ -140,6 +152,18 @@
     </Compile>
     <Compile Include="PanelesOperador\InicioOperador.Designer.cs">
       <DependentUpon>InicioOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelesOperador\Reportes\ReporteCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelesOperador\Reportes\ReporteCuentas.Designer.cs">
+      <DependentUpon>ReporteCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelesOperador\Reportes\ReporteDeudores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelesOperador\Reportes\ReporteDeudores.Designer.cs">
+      <DependentUpon>ReporteDeudores.cs</DependentUpon>
     </Compile>
     <Compile Include="PanelSuperAdmin.cs">
       <SubType>Form</SubType>
@@ -167,6 +191,9 @@
     <EmbeddedResource Include="PanelesOperador\Clientes\ClientesCorriente.resx">
       <DependentUpon>ClientesCorriente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PanelesOperador\Clientes\ClientesDetalle.resx">
+      <DependentUpon>ClientesDetalle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PanelesOperador\Clientes\ClientesMora.resx">
       <DependentUpon>ClientesMora.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PanelesOperador\Cuentas\Cuentas.resx">
       <DependentUpon>Cuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelesOperador\Cuentas\CuentasDetalle.resx">
+      <DependentUpon>CuentasDetalle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelesOperador\Cuentas\CuentasPago.resx">
       <DependentUpon>CuentasPago.cs</DependentUpon>
@@ -187,6 +217,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PanelesOperador\InicioOperador.resx">
       <DependentUpon>InicioOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelesOperador\Reportes\ReporteCuentas.resx">
+      <DependentUpon>ReporteCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelesOperador\Reportes\ReporteDeudores.resx">
+      <DependentUpon>ReporteDeudores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelSuperAdmin.resx">
       <DependentUpon>PanelSuperAdmin.cs</DependentUpon>
@@ -255,6 +291,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

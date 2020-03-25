@@ -34,6 +34,12 @@
             this.LblCAgregar = new System.Windows.Forms.Label();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape8 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape7 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.TxtCuMonto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtMon = new System.Windows.Forms.TextBox();
@@ -48,17 +54,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.TxtFechaEmision = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape7 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape8 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.BtnCuAgregarPago = new System.Windows.Forms.Button();
             this.PanelFormaPago = new System.Windows.Forms.Panel();
-            this.BtnFormaDePago = new System.Windows.Forms.Button();
-            this.BtnContado = new System.Windows.Forms.Button();
             this.BtnCredito = new System.Windows.Forms.Button();
+            this.BtnContado = new System.Windows.Forms.Button();
+            this.BtnFormaDePago = new System.Windows.Forms.Button();
             this.TimerTipoPago = new System.Windows.Forms.Timer(this.components);
             this.PanelFormaPago.SuspendLayout();
             this.SuspendLayout();
@@ -120,9 +120,69 @@
             this.lineShape3,
             this.lineShape2,
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(1194, 531);
+            this.shapeContainer1.Size = new System.Drawing.Size(1200, 570);
             this.shapeContainer1.TabIndex = 15;
             this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape8
+            // 
+            this.lineShape8.BorderColor = System.Drawing.Color.White;
+            this.lineShape8.Enabled = false;
+            this.lineShape8.Name = "lineShape8";
+            this.lineShape8.X1 = 798;
+            this.lineShape8.X2 = 1103;
+            this.lineShape8.Y1 = 407;
+            this.lineShape8.Y2 = 407;
+            // 
+            // lineShape7
+            // 
+            this.lineShape7.BorderColor = System.Drawing.Color.White;
+            this.lineShape7.Enabled = false;
+            this.lineShape7.Name = "lineShape7";
+            this.lineShape7.X1 = 798;
+            this.lineShape7.X2 = 1103;
+            this.lineShape7.Y1 = 344;
+            this.lineShape7.Y2 = 344;
+            // 
+            // lineShape5
+            // 
+            this.lineShape5.BorderColor = System.Drawing.Color.White;
+            this.lineShape5.Enabled = false;
+            this.lineShape5.Name = "lineShape5";
+            this.lineShape5.X1 = 799;
+            this.lineShape5.X2 = 1104;
+            this.lineShape5.Y1 = 183;
+            this.lineShape5.Y2 = 183;
+            // 
+            // lineShape4
+            // 
+            this.lineShape4.BorderColor = System.Drawing.Color.White;
+            this.lineShape4.Enabled = false;
+            this.lineShape4.Name = "lineShape4";
+            this.lineShape4.X1 = 226;
+            this.lineShape4.X2 = 530;
+            this.lineShape4.Y1 = 376;
+            this.lineShape4.Y2 = 376;
+            // 
+            // lineShape3
+            // 
+            this.lineShape3.BorderColor = System.Drawing.Color.White;
+            this.lineShape3.Enabled = false;
+            this.lineShape3.Name = "lineShape3";
+            this.lineShape3.X1 = 226;
+            this.lineShape3.X2 = 530;
+            this.lineShape3.Y1 = 311;
+            this.lineShape3.Y2 = 311;
+            // 
+            // lineShape2
+            // 
+            this.lineShape2.BorderColor = System.Drawing.Color.White;
+            this.lineShape2.Enabled = false;
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 227;
+            this.lineShape2.X2 = 530;
+            this.lineShape2.Y1 = 247;
+            this.lineShape2.Y2 = 247;
             // 
             // TxtCuMonto
             // 
@@ -285,66 +345,6 @@
             this.label7.TabIndex = 28;
             this.label7.Text = "Fecha Emision:";
             // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderColor = System.Drawing.Color.White;
-            this.lineShape2.Enabled = false;
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 227;
-            this.lineShape2.X2 = 530;
-            this.lineShape2.Y1 = 247;
-            this.lineShape2.Y2 = 247;
-            // 
-            // lineShape3
-            // 
-            this.lineShape3.BorderColor = System.Drawing.Color.White;
-            this.lineShape3.Enabled = false;
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 226;
-            this.lineShape3.X2 = 530;
-            this.lineShape3.Y1 = 311;
-            this.lineShape3.Y2 = 311;
-            // 
-            // lineShape4
-            // 
-            this.lineShape4.BorderColor = System.Drawing.Color.White;
-            this.lineShape4.Enabled = false;
-            this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 226;
-            this.lineShape4.X2 = 530;
-            this.lineShape4.Y1 = 376;
-            this.lineShape4.Y2 = 376;
-            // 
-            // lineShape5
-            // 
-            this.lineShape5.BorderColor = System.Drawing.Color.White;
-            this.lineShape5.Enabled = false;
-            this.lineShape5.Name = "lineShape5";
-            this.lineShape5.X1 = 799;
-            this.lineShape5.X2 = 1104;
-            this.lineShape5.Y1 = 183;
-            this.lineShape5.Y2 = 183;
-            // 
-            // lineShape7
-            // 
-            this.lineShape7.BorderColor = System.Drawing.Color.White;
-            this.lineShape7.Enabled = false;
-            this.lineShape7.Name = "lineShape7";
-            this.lineShape7.X1 = 798;
-            this.lineShape7.X2 = 1103;
-            this.lineShape7.Y1 = 344;
-            this.lineShape7.Y2 = 344;
-            // 
-            // lineShape8
-            // 
-            this.lineShape8.BorderColor = System.Drawing.Color.White;
-            this.lineShape8.Enabled = false;
-            this.lineShape8.Name = "lineShape8";
-            this.lineShape8.X1 = 798;
-            this.lineShape8.X2 = 1143;
-            this.lineShape8.Y1 = 407;
-            this.lineShape8.Y2 = 407;
-            // 
             // BtnCuAgregarPago
             // 
             this.BtnCuAgregarPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
@@ -375,24 +375,23 @@
             this.PanelFormaPago.Size = new System.Drawing.Size(150, 30);
             this.PanelFormaPago.TabIndex = 31;
             // 
-            // BtnFormaDePago
+            // BtnCredito
             // 
-            this.BtnFormaDePago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.BtnFormaDePago.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnFormaDePago.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnFormaDePago.FlatAppearance.BorderSize = 0;
-            this.BtnFormaDePago.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.BtnFormaDePago.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnFormaDePago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnFormaDePago.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnFormaDePago.ForeColor = System.Drawing.Color.White;
-            this.BtnFormaDePago.Location = new System.Drawing.Point(0, 0);
-            this.BtnFormaDePago.Name = "BtnFormaDePago";
-            this.BtnFormaDePago.Size = new System.Drawing.Size(150, 30);
-            this.BtnFormaDePago.TabIndex = 31;
-            this.BtnFormaDePago.Text = "Seleccionar...";
-            this.BtnFormaDePago.UseVisualStyleBackColor = false;
-            this.BtnFormaDePago.Click += new System.EventHandler(this.BtnFormaDePago_Click);
+            this.BtnCredito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BtnCredito.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCredito.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCredito.FlatAppearance.BorderSize = 0;
+            this.BtnCredito.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.BtnCredito.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnCredito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCredito.ForeColor = System.Drawing.Color.White;
+            this.BtnCredito.Location = new System.Drawing.Point(0, 60);
+            this.BtnCredito.Name = "BtnCredito";
+            this.BtnCredito.Size = new System.Drawing.Size(150, 30);
+            this.BtnCredito.TabIndex = 33;
+            this.BtnCredito.Text = "Credito";
+            this.BtnCredito.UseVisualStyleBackColor = false;
             // 
             // BtnContado
             // 
@@ -412,23 +411,24 @@
             this.BtnContado.Text = "Contado";
             this.BtnContado.UseVisualStyleBackColor = false;
             // 
-            // BtnCredito
+            // BtnFormaDePago
             // 
-            this.BtnCredito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.BtnCredito.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCredito.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnCredito.FlatAppearance.BorderSize = 0;
-            this.BtnCredito.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.BtnCredito.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnCredito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCredito.ForeColor = System.Drawing.Color.White;
-            this.BtnCredito.Location = new System.Drawing.Point(0, 60);
-            this.BtnCredito.Name = "BtnCredito";
-            this.BtnCredito.Size = new System.Drawing.Size(150, 30);
-            this.BtnCredito.TabIndex = 33;
-            this.BtnCredito.Text = "Credito";
-            this.BtnCredito.UseVisualStyleBackColor = false;
+            this.BtnFormaDePago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BtnFormaDePago.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnFormaDePago.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnFormaDePago.FlatAppearance.BorderSize = 0;
+            this.BtnFormaDePago.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.BtnFormaDePago.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnFormaDePago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFormaDePago.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFormaDePago.ForeColor = System.Drawing.Color.White;
+            this.BtnFormaDePago.Location = new System.Drawing.Point(0, 0);
+            this.BtnFormaDePago.Name = "BtnFormaDePago";
+            this.BtnFormaDePago.Size = new System.Drawing.Size(150, 30);
+            this.BtnFormaDePago.TabIndex = 31;
+            this.BtnFormaDePago.Text = "Seleccionar...";
+            this.BtnFormaDePago.UseVisualStyleBackColor = false;
+            this.BtnFormaDePago.Click += new System.EventHandler(this.BtnFormaDePago_Click);
             // 
             // TimerTipoPago
             // 
@@ -440,7 +440,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(1194, 531);
+            this.ClientSize = new System.Drawing.Size(1200, 570);
             this.Controls.Add(this.PanelFormaPago);
             this.Controls.Add(this.BtnCuAgregarPago);
             this.Controls.Add(this.TxtFechaEmision);

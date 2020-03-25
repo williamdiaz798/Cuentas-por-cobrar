@@ -37,3 +37,7 @@ C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\Cue
 C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Cuentas.CuentasPVencer.resources
 C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Cuentas.CuentasVencidas.resources
 C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Cuentas.CuentasPago.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Reportes.ReporteCuentas.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Reportes.ReporteDeudores.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Clientes.ClientesDetalle.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Cuentas.CuentasDetalle.resources

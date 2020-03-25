@@ -36,9 +36,9 @@
             this.ClndFechaEmision = new System.Windows.Forms.MonthCalendar();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.TxtCuMonto = new System.Windows.Forms.TextBox();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.TxtCuMonto = new System.Windows.Forms.TextBox();
             this.TxtCuFiador = new System.Windows.Forms.TextBox();
             this.TxtCuPeriodo = new System.Windows.Forms.TextBox();
             this.BtnCAgregar = new System.Windows.Forms.Button();
@@ -120,9 +120,29 @@
             this.lineShape3,
             this.lineShape2,
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(1210, 570);
+            this.shapeContainer1.Size = new System.Drawing.Size(1200, 570);
             this.shapeContainer1.TabIndex = 10;
             this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape3
+            // 
+            this.lineShape3.BorderColor = System.Drawing.Color.White;
+            this.lineShape3.Enabled = false;
+            this.lineShape3.Name = "lineShape3";
+            this.lineShape3.X1 = 406;
+            this.lineShape3.X2 = 751;
+            this.lineShape3.Y1 = 428;
+            this.lineShape3.Y2 = 428;
+            // 
+            // lineShape2
+            // 
+            this.lineShape2.BorderColor = System.Drawing.Color.White;
+            this.lineShape2.Enabled = false;
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 405;
+            this.lineShape2.X2 = 750;
+            this.lineShape2.Y1 = 372;
+            this.lineShape2.Y2 = 372;
             // 
             // TxtCuMonto
             // 
@@ -136,26 +156,6 @@
             this.TxtCuMonto.Size = new System.Drawing.Size(346, 28);
             this.TxtCuMonto.TabIndex = 12;
             this.TxtCuMonto.TextChanged += new System.EventHandler(this.TxtCNombre_TextChanged);
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderColor = System.Drawing.Color.White;
-            this.lineShape2.Enabled = false;
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 405;
-            this.lineShape2.X2 = 750;
-            this.lineShape2.Y1 = 372;
-            this.lineShape2.Y2 = 372;
-            // 
-            // lineShape3
-            // 
-            this.lineShape3.BorderColor = System.Drawing.Color.White;
-            this.lineShape3.Enabled = false;
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 406;
-            this.lineShape3.X2 = 751;
-            this.lineShape3.Y1 = 428;
-            this.lineShape3.Y2 = 428;
             // 
             // TxtCuFiador
             // 
@@ -203,7 +203,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(1210, 570);
+            this.ClientSize = new System.Drawing.Size(1200, 570);
             this.Controls.Add(this.BtnCAgregar);
             this.Controls.Add(this.TxtCuPeriodo);
             this.Controls.Add(this.TxtCuFiador);

@@ -1,6 +1,7 @@
 ﻿using CuenasPorCobrar.PanelesOperador;
 using CuenasPorCobrar.PanelesOperador.Clientes;
 using CuenasPorCobrar.PanelesOperador.Cuentas;
+using CuenasPorCobrar.PanelesOperador.Reportes;
 using CuenasPorCobrar.Properties;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,10 @@ namespace CuenasPorCobrar
     public partial class PanelAdminSistema : Form
     {
         // C = cliente, CPV = Cuentas Por Vencer
-        private bool isCollapseC, isCollapseCPV, isCollapseH;
+        private bool isCollapseC, isCollapseCPV, isCollapseH, isCollapseUsuario;
+
+        private Form1 login = new Form1();
+
         public PanelAdminSistema()
         {
             InitializeComponent();
@@ -157,6 +161,60 @@ namespace CuenasPorCobrar
         private void BtnCuentasT_Click(object sender, EventArgs e)
         {
             AbrirFormInicio(new Cuentas());
+        }
+
+        private void BtnDeudores_Click(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new ReporteDeudores());
+        }
+
+        private void BtnCuentasR_Click(object sender, EventArgs e)
+        {
+            AbrirFormInicio(new ReporteCuentas());
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void BtnUsuario_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void BtnUsuario_Click_1(object sender, EventArgs e)
+        {
+            TimerUsuario.Start();
+        }
+
+        private void BtnCerrarS_Click(object sender, EventArgs e)
+        {
+            //this.Close();
+            this.Hide();
+            login.Show();
+        }
+
+        private void TimerUsuario_Tick(object sender, EventArgs e)
+        {
+            if (isCollapseUsuario)
+            {
+                PanelCuentaUsuario.Height -= 10;
+                if (PanelCuentaUsuario.Size == PanelCuentaUsuario.MinimumSize)
+                {
+                    TimerUsuario.Stop();
+                    isCollapseUsuario = false;
+                }
+            }
+            else
+            {
+                PanelCuentaUsuario.Height += 10;
+                if (PanelCuentaUsuario.Size == PanelCuentaUsuario.MaximumSize)
+                {
+                    TimerUsuario.Stop();
+                    isCollapseUsuario = true;
+                }
+            }
         }
 
         private void TimerCPV_Tick(object sender, EventArgs e)

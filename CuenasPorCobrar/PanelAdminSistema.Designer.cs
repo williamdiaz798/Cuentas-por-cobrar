@@ -31,34 +31,40 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelAdminSistema));
             this.PanelOperador = new System.Windows.Forms.Panel();
+            this.BtnMinimisar = new System.Windows.Forms.Button();
             this.BtnIndex = new System.Windows.Forms.Button();
             this.PanelClien = new System.Windows.Forms.Panel();
             this.BtnCCrear = new System.Windows.Forms.Button();
             this.BtnCTodos = new System.Windows.Forms.Button();
             this.BtnCMora = new System.Windows.Forms.Button();
             this.BtnCACorriente = new System.Windows.Forms.Button();
+            this.BtnClien = new System.Windows.Forms.Button();
             this.TimerClien = new System.Windows.Forms.Timer(this.components);
             this.PanelCPV = new System.Windows.Forms.Panel();
+            this.BtnCuentasT = new System.Windows.Forms.Button();
+            this.BtnCuPago = new System.Windows.Forms.Button();
+            this.BtnCuCrear = new System.Windows.Forms.Button();
             this.BtnCuVencidas = new System.Windows.Forms.Button();
             this.BtnCuVence = new System.Windows.Forms.Button();
+            this.BtnCPV = new System.Windows.Forms.Button();
             this.TimerCPV = new System.Windows.Forms.Timer(this.components);
             this.TimerHistorial = new System.Windows.Forms.Timer(this.components);
             this.PanelReportes = new System.Windows.Forms.Panel();
             this.BtnCuentasR = new System.Windows.Forms.Button();
             this.BtnDeudores = new System.Windows.Forms.Button();
-            this.PanelContenedor = new System.Windows.Forms.Panel();
             this.BtnReporte = new System.Windows.Forms.Button();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.TimerUsuario = new System.Windows.Forms.Timer(this.components);
             this.BtnSalir = new System.Windows.Forms.Button();
-            this.BtnCPV = new System.Windows.Forms.Button();
-            this.BtnClien = new System.Windows.Forms.Button();
-            this.BtnMinimisar = new System.Windows.Forms.Button();
-            this.BtnCuCrear = new System.Windows.Forms.Button();
-            this.BtnCuPago = new System.Windows.Forms.Button();
-            this.BtnCuentasT = new System.Windows.Forms.Button();
+            this.PanelCuentaUsuario = new System.Windows.Forms.Panel();
+            this.BtnCerrarS = new System.Windows.Forms.Button();
+            this.BtnCuenta = new System.Windows.Forms.Button();
+            this.BtnUsuario = new System.Windows.Forms.Button();
             this.PanelOperador.SuspendLayout();
             this.PanelClien.SuspendLayout();
             this.PanelCPV.SuspendLayout();
             this.PanelReportes.SuspendLayout();
+            this.PanelCuentaUsuario.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelOperador
@@ -69,6 +75,24 @@
             this.PanelOperador.Name = "PanelOperador";
             this.PanelOperador.Size = new System.Drawing.Size(1200, 30);
             this.PanelOperador.TabIndex = 0;
+            // 
+            // BtnMinimisar
+            // 
+            this.BtnMinimisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.BtnMinimisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMinimisar.FlatAppearance.BorderSize = 0;
+            this.BtnMinimisar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnMinimisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnMinimisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMinimisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMinimisar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnMinimisar.Image = global::CuenasPorCobrar.Properties.Resources.less16;
+            this.BtnMinimisar.Location = new System.Drawing.Point(1133, 0);
+            this.BtnMinimisar.Name = "BtnMinimisar";
+            this.BtnMinimisar.Size = new System.Drawing.Size(35, 30);
+            this.BtnMinimisar.TabIndex = 14;
+            this.BtnMinimisar.UseVisualStyleBackColor = false;
+            this.BtnMinimisar.Click += new System.EventHandler(this.BtnMinimisar_Click);
             // 
             // BtnIndex
             // 
@@ -183,6 +207,27 @@
             this.BtnCACorriente.UseVisualStyleBackColor = false;
             this.BtnCACorriente.Click += new System.EventHandler(this.BtnCACorriente_Click);
             // 
+            // BtnClien
+            // 
+            this.BtnClien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.BtnClien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnClien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnClien.FlatAppearance.BorderSize = 0;
+            this.BtnClien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnClien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnClien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClien.ForeColor = System.Drawing.Color.White;
+            this.BtnClien.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
+            this.BtnClien.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnClien.Location = new System.Drawing.Point(0, 0);
+            this.BtnClien.Name = "BtnClien";
+            this.BtnClien.Size = new System.Drawing.Size(130, 30);
+            this.BtnClien.TabIndex = 7;
+            this.BtnClien.Text = "Clientes    ";
+            this.BtnClien.UseVisualStyleBackColor = false;
+            this.BtnClien.Click += new System.EventHandler(this.button1_Click);
+            // 
             // TimerClien
             // 
             this.TimerClien.Interval = 15;
@@ -203,6 +248,69 @@
             this.PanelCPV.Name = "PanelCPV";
             this.PanelCPV.Size = new System.Drawing.Size(195, 30);
             this.PanelCPV.TabIndex = 8;
+            // 
+            // BtnCuentasT
+            // 
+            this.BtnCuentasT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnCuentasT.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCuentasT.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCuentasT.FlatAppearance.BorderSize = 0;
+            this.BtnCuentasT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BtnCuentasT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BtnCuentasT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCuentasT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCuentasT.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnCuentasT.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCuentasT.Location = new System.Drawing.Point(0, 150);
+            this.BtnCuentasT.MaximumSize = new System.Drawing.Size(195, 30);
+            this.BtnCuentasT.Name = "BtnCuentasT";
+            this.BtnCuentasT.Size = new System.Drawing.Size(195, 30);
+            this.BtnCuentasT.TabIndex = 13;
+            this.BtnCuentasT.Text = "Todas";
+            this.BtnCuentasT.UseVisualStyleBackColor = false;
+            this.BtnCuentasT.Click += new System.EventHandler(this.BtnCuentasT_Click);
+            // 
+            // BtnCuPago
+            // 
+            this.BtnCuPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnCuPago.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCuPago.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCuPago.FlatAppearance.BorderSize = 0;
+            this.BtnCuPago.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BtnCuPago.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BtnCuPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCuPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCuPago.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnCuPago.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCuPago.Location = new System.Drawing.Point(0, 120);
+            this.BtnCuPago.MaximumSize = new System.Drawing.Size(195, 30);
+            this.BtnCuPago.Name = "BtnCuPago";
+            this.BtnCuPago.Size = new System.Drawing.Size(195, 30);
+            this.BtnCuPago.TabIndex = 12;
+            this.BtnCuPago.Text = "Pago";
+            this.BtnCuPago.UseVisualStyleBackColor = false;
+            this.BtnCuPago.Click += new System.EventHandler(this.BtnCuPago_Click);
+            // 
+            // BtnCuCrear
+            // 
+            this.BtnCuCrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnCuCrear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCuCrear.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCuCrear.FlatAppearance.BorderSize = 0;
+            this.BtnCuCrear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BtnCuCrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BtnCuCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCuCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCuCrear.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnCuCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCuCrear.Location = new System.Drawing.Point(0, 90);
+            this.BtnCuCrear.MaximumSize = new System.Drawing.Size(195, 30);
+            this.BtnCuCrear.Name = "BtnCuCrear";
+            this.BtnCuCrear.Size = new System.Drawing.Size(195, 30);
+            this.BtnCuCrear.TabIndex = 11;
+            this.BtnCuCrear.Text = "Crear";
+            this.BtnCuCrear.UseVisualStyleBackColor = false;
+            this.BtnCuCrear.Click += new System.EventHandler(this.BtnCuCrear_Click);
             // 
             // BtnCuVencidas
             // 
@@ -245,6 +353,27 @@
             this.BtnCuVence.UseVisualStyleBackColor = false;
             this.BtnCuVence.Click += new System.EventHandler(this.BtnCuVence_Click);
             // 
+            // BtnCPV
+            // 
+            this.BtnCPV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.BtnCPV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCPV.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCPV.FlatAppearance.BorderSize = 0;
+            this.BtnCPV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnCPV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnCPV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCPV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCPV.ForeColor = System.Drawing.Color.White;
+            this.BtnCPV.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
+            this.BtnCPV.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCPV.Location = new System.Drawing.Point(0, 0);
+            this.BtnCPV.Name = "BtnCPV";
+            this.BtnCPV.Size = new System.Drawing.Size(195, 30);
+            this.BtnCPV.TabIndex = 8;
+            this.BtnCPV.Text = "Cuentas por Cobrar   ";
+            this.BtnCPV.UseVisualStyleBackColor = false;
+            this.BtnCPV.Click += new System.EventHandler(this.BtnCPV_Click);
+            // 
             // TimerCPV
             // 
             this.TimerCPV.Interval = 15;
@@ -285,6 +414,7 @@
             this.BtnCuentasR.TabIndex = 13;
             this.BtnCuentasR.Text = "Cuentas";
             this.BtnCuentasR.UseVisualStyleBackColor = false;
+            this.BtnCuentasR.Click += new System.EventHandler(this.BtnCuentasR_Click);
             // 
             // BtnDeudores
             // 
@@ -303,13 +433,7 @@
             this.BtnDeudores.TabIndex = 12;
             this.BtnDeudores.Text = "Deudores";
             this.BtnDeudores.UseVisualStyleBackColor = false;
-            // 
-            // PanelContenedor
-            // 
-            this.PanelContenedor.Location = new System.Drawing.Point(0, 30);
-            this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(1210, 570);
-            this.PanelContenedor.TabIndex = 13;
+            this.BtnDeudores.Click += new System.EventHandler(this.BtnDeudores_Click);
             // 
             // BtnReporte
             // 
@@ -332,6 +456,18 @@
             this.BtnReporte.UseVisualStyleBackColor = false;
             this.BtnReporte.Click += new System.EventHandler(this.BtnReporte_Click);
             // 
+            // PanelContenedor
+            // 
+            this.PanelContenedor.Location = new System.Drawing.Point(0, 30);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.Size = new System.Drawing.Size(1200, 570);
+            this.PanelContenedor.TabIndex = 13;
+            // 
+            // TimerUsuario
+            // 
+            this.TimerUsuario.Interval = 30;
+            this.TimerUsuario.Tick += new System.EventHandler(this.TimerUsuario_Tick);
+            // 
             // BtnSalir
             // 
             this.BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -350,140 +486,89 @@
             this.BtnSalir.UseVisualStyleBackColor = false;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
-            // BtnCPV
+            // PanelCuentaUsuario
             // 
-            this.BtnCPV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.BtnCPV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCPV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnCPV.FlatAppearance.BorderSize = 0;
-            this.BtnCPV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnCPV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BtnCPV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCPV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCPV.ForeColor = System.Drawing.Color.White;
-            this.BtnCPV.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
-            this.BtnCPV.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCPV.Location = new System.Drawing.Point(0, 0);
-            this.BtnCPV.Name = "BtnCPV";
-            this.BtnCPV.Size = new System.Drawing.Size(195, 30);
-            this.BtnCPV.TabIndex = 8;
-            this.BtnCPV.Text = "Cuentas por Cobrar   ";
-            this.BtnCPV.UseVisualStyleBackColor = false;
-            this.BtnCPV.Click += new System.EventHandler(this.BtnCPV_Click);
+            this.PanelCuentaUsuario.Controls.Add(this.BtnCerrarS);
+            this.PanelCuentaUsuario.Controls.Add(this.BtnCuenta);
+            this.PanelCuentaUsuario.Controls.Add(this.BtnUsuario);
+            this.PanelCuentaUsuario.Location = new System.Drawing.Point(1020, 0);
+            this.PanelCuentaUsuario.MaximumSize = new System.Drawing.Size(120, 90);
+            this.PanelCuentaUsuario.MinimumSize = new System.Drawing.Size(120, 30);
+            this.PanelCuentaUsuario.Name = "PanelCuentaUsuario";
+            this.PanelCuentaUsuario.Size = new System.Drawing.Size(120, 30);
+            this.PanelCuentaUsuario.TabIndex = 14;
             // 
-            // BtnClien
+            // BtnCerrarS
             // 
-            this.BtnClien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.BtnClien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnClien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnClien.FlatAppearance.BorderSize = 0;
-            this.BtnClien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnClien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BtnClien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClien.ForeColor = System.Drawing.Color.White;
-            this.BtnClien.Image = global::CuenasPorCobrar.Properties.Resources.ArrowDown16;
-            this.BtnClien.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnClien.Location = new System.Drawing.Point(0, 0);
-            this.BtnClien.Name = "BtnClien";
-            this.BtnClien.Size = new System.Drawing.Size(130, 30);
-            this.BtnClien.TabIndex = 7;
-            this.BtnClien.Text = "Clientes    ";
-            this.BtnClien.UseVisualStyleBackColor = false;
-            this.BtnClien.Click += new System.EventHandler(this.button1_Click);
+            this.BtnCerrarS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BtnCerrarS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCerrarS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCerrarS.FlatAppearance.BorderSize = 0;
+            this.BtnCerrarS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BtnCerrarS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BtnCerrarS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrarS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCerrarS.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnCerrarS.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCerrarS.Location = new System.Drawing.Point(0, 60);
+            this.BtnCerrarS.Name = "BtnCerrarS";
+            this.BtnCerrarS.Size = new System.Drawing.Size(120, 30);
+            this.BtnCerrarS.TabIndex = 20;
+            this.BtnCerrarS.Text = "Cerrar Sesion";
+            this.BtnCerrarS.UseVisualStyleBackColor = false;
+            this.BtnCerrarS.Click += new System.EventHandler(this.BtnCerrarS_Click);
             // 
-            // BtnMinimisar
+            // BtnCuenta
             // 
-            this.BtnMinimisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.BtnMinimisar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinimisar.FlatAppearance.BorderSize = 0;
-            this.BtnMinimisar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.BtnMinimisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BtnMinimisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMinimisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMinimisar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnMinimisar.Image = global::CuenasPorCobrar.Properties.Resources.less16;
-            this.BtnMinimisar.Location = new System.Drawing.Point(1133, 0);
-            this.BtnMinimisar.Name = "BtnMinimisar";
-            this.BtnMinimisar.Size = new System.Drawing.Size(35, 30);
-            this.BtnMinimisar.TabIndex = 14;
-            this.BtnMinimisar.UseVisualStyleBackColor = false;
-            this.BtnMinimisar.Click += new System.EventHandler(this.BtnMinimisar_Click);
+            this.BtnCuenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BtnCuenta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCuenta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCuenta.FlatAppearance.BorderSize = 0;
+            this.BtnCuenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BtnCuenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BtnCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCuenta.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnCuenta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCuenta.Location = new System.Drawing.Point(0, 30);
+            this.BtnCuenta.Name = "BtnCuenta";
+            this.BtnCuenta.Size = new System.Drawing.Size(120, 30);
+            this.BtnCuenta.TabIndex = 19;
+            this.BtnCuenta.Text = "Cuenta";
+            this.BtnCuenta.UseVisualStyleBackColor = false;
             // 
-            // BtnCuCrear
+            // BtnUsuario
             // 
-            this.BtnCuCrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnCuCrear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCuCrear.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnCuCrear.FlatAppearance.BorderSize = 0;
-            this.BtnCuCrear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.BtnCuCrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.BtnCuCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCuCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCuCrear.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnCuCrear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCuCrear.Location = new System.Drawing.Point(0, 90);
-            this.BtnCuCrear.MaximumSize = new System.Drawing.Size(195, 30);
-            this.BtnCuCrear.Name = "BtnCuCrear";
-            this.BtnCuCrear.Size = new System.Drawing.Size(195, 30);
-            this.BtnCuCrear.TabIndex = 11;
-            this.BtnCuCrear.Text = "Crear";
-            this.BtnCuCrear.UseVisualStyleBackColor = false;
-            this.BtnCuCrear.Click += new System.EventHandler(this.BtnCuCrear_Click);
-            // 
-            // BtnCuPago
-            // 
-            this.BtnCuPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnCuPago.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCuPago.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnCuPago.FlatAppearance.BorderSize = 0;
-            this.BtnCuPago.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.BtnCuPago.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.BtnCuPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCuPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCuPago.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnCuPago.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCuPago.Location = new System.Drawing.Point(0, 120);
-            this.BtnCuPago.MaximumSize = new System.Drawing.Size(195, 30);
-            this.BtnCuPago.Name = "BtnCuPago";
-            this.BtnCuPago.Size = new System.Drawing.Size(195, 30);
-            this.BtnCuPago.TabIndex = 12;
-            this.BtnCuPago.Text = "Pago";
-            this.BtnCuPago.UseVisualStyleBackColor = false;
-            this.BtnCuPago.Click += new System.EventHandler(this.BtnCuPago_Click);
-            // 
-            // BtnCuentasT
-            // 
-            this.BtnCuentasT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnCuentasT.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCuentasT.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnCuentasT.FlatAppearance.BorderSize = 0;
-            this.BtnCuentasT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.BtnCuentasT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.BtnCuentasT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCuentasT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCuentasT.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnCuentasT.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCuentasT.Location = new System.Drawing.Point(0, 150);
-            this.BtnCuentasT.MaximumSize = new System.Drawing.Size(195, 30);
-            this.BtnCuentasT.Name = "BtnCuentasT";
-            this.BtnCuentasT.Size = new System.Drawing.Size(195, 30);
-            this.BtnCuentasT.TabIndex = 13;
-            this.BtnCuentasT.Text = "Todas";
-            this.BtnCuentasT.UseVisualStyleBackColor = false;
-            this.BtnCuentasT.Click += new System.EventHandler(this.BtnCuentasT_Click);
+            this.BtnUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.BtnUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnUsuario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnUsuario.FlatAppearance.BorderSize = 0;
+            this.BtnUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.BtnUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnUsuario.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnUsuario.Image = global::CuenasPorCobrar.Properties.Resources.user16;
+            this.BtnUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnUsuario.Location = new System.Drawing.Point(0, 0);
+            this.BtnUsuario.Name = "BtnUsuario";
+            this.BtnUsuario.Size = new System.Drawing.Size(120, 30);
+            this.BtnUsuario.TabIndex = 17;
+            this.BtnUsuario.UseVisualStyleBackColor = false;
+            this.BtnUsuario.Click += new System.EventHandler(this.BtnUsuario_Click_1);
             // 
             // PanelAdminSistema
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1200, 600);
+            this.Controls.Add(this.PanelCuentaUsuario);
             this.Controls.Add(this.PanelReportes);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.PanelCPV);
             this.Controls.Add(this.PanelClien);
             this.Controls.Add(this.BtnIndex);
-            this.Controls.Add(this.PanelOperador);
             this.Controls.Add(this.PanelContenedor);
+            this.Controls.Add(this.PanelOperador);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PanelAdminSistema";
@@ -494,6 +579,7 @@
             this.PanelClien.ResumeLayout(false);
             this.PanelCPV.ResumeLayout(false);
             this.PanelReportes.ResumeLayout(false);
+            this.PanelCuentaUsuario.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -535,5 +621,10 @@
         private System.Windows.Forms.Button BtnCuentasT;
         private System.Windows.Forms.Button BtnCuPago;
         private System.Windows.Forms.Button BtnCuCrear;
+        private System.Windows.Forms.Timer TimerUsuario;
+        private System.Windows.Forms.Panel PanelCuentaUsuario;
+        private System.Windows.Forms.Button BtnCuenta;
+        private System.Windows.Forms.Button BtnUsuario;
+        private System.Windows.Forms.Button BtnCerrarS;
     }
 }

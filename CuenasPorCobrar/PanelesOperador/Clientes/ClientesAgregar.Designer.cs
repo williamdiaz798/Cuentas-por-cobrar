@@ -135,7 +135,7 @@
             this.lineShape3,
             this.lineShape2,
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(1210, 570);
+            this.shapeContainer1.Size = new System.Drawing.Size(1200, 570);
             this.shapeContainer1.TabIndex = 10;
             this.shapeContainer1.TabStop = false;
             // 
@@ -261,7 +261,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(1210, 570);
+            this.ClientSize = new System.Drawing.Size(1200, 570);
             this.Controls.Add(this.BtnCAgregar);
             this.Controls.Add(this.TxtCCorreo);
             this.Controls.Add(this.TxtCTelefono);
