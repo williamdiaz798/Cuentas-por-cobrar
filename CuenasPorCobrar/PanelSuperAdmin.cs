@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CuenasPorCobrar.PanelesAdministrador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,36 @@ namespace CuenasPorCobrar
         private void BtnMinimisar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            llamarForm(new AgregarUsuarios());
+            llamarForm(new Usuarios());
+        }
+
+        private void llamarForm(object formhijo)
+        {
+
+            if (this.PanelContenedorAdmin.Controls.Count > 0)
+                this.PanelContenedorAdmin.Controls.RemoveAt(0);
+            Form fh = formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContenedorAdmin.Controls.Add(fh);
+            this.PanelContenedorAdmin.Tag = fh;
+            fh.Show();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            llamarForm(new TasaInteres());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            llamarForm(new Beneficios());
         }
     }
 }

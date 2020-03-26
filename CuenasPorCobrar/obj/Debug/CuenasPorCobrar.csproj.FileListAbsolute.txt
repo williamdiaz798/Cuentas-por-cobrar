@@ -41,3 +41,7 @@ C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\Cue
 C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Reportes.ReporteDeudores.resources
 C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Clientes.ClientesDetalle.resources
 C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesOperador.Cuentas.CuentasDetalle.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesAdministrador.Usuarios.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesAdministrador.AgregarUsuarios.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesAdministrador.Beneficios.resources
+C:\Users\diazw\Documents\GitHub\Cuentas-por-cobrar\CuenasPorCobrar\obj\Debug\CuenasPorCobrar.PanelesAdministrador.TasaInteres.resources
