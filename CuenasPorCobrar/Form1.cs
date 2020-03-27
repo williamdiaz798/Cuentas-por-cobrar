@@ -1,4 +1,5 @@
 ﻿using CuenasPorCobrar.Cache;
+using CuenasPorCobrar.DataBase;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +17,11 @@ namespace CuenasPorCobrar
         PanelAdminSistema panelAdmin;
         PanelSuperAdmin panelSAdmin;
         FormBienvenida bienvenida;
+        UsuariosData login;
         private int tipoUsuario = 0;
+
+        private string Usuario;
+        private string Pass;
 
         public Form1()
         {
@@ -25,33 +30,29 @@ namespace CuenasPorCobrar
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            if (TxtUsuario.Text == "")
+            login = new UsuariosData();
+
+            Usuario = TxtUsuario.Text;
+            Pass = TxtContra.Text;
+
+            if (Usuario == "")
             {
                 MessageBox.Show("Ingrese el Usuario");
 
             }
-            else if (TxtContra.Text == "")
+            else if (Pass == "")
             {
                 MessageBox.Show("Ingrese la contraseña");
             }
             else 
             {
-                if (TxtUsuario.Text == "Will Diaz" && TxtContra.Text == "Asdf1234")
-                {
-                    tipoUsuario = 2;
-                } else if (TxtUsuario.Text == "Emerson" && TxtContra.Text == "Asdf1234") 
-                {
-                    tipoUsuario = 1;
-                }
-                else
-                {
-                    MessageBox.Show("Datos Incorrectos");
-                }
+
+                tipoUsuario = login.Login(Usuario, Pass);
 
                 if (tipoUsuario != 0)
                 {
@@ -70,6 +71,10 @@ namespace CuenasPorCobrar
                         panelSAdmin = new PanelSuperAdmin();
                         panelSAdmin.Show();
                     }
+                }
+                else
+                {
+                    MessageBox.Show("Datos Incorrectos");
                 }
             }
         }

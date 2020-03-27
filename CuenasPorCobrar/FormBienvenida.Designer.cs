@@ -95,7 +95,7 @@
             this.LblUsuarioN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LblUsuarioN.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblUsuarioN.ForeColor = System.Drawing.Color.White;
-            this.LblUsuarioN.Location = new System.Drawing.Point(693, 205);
+            this.LblUsuarioN.Location = new System.Drawing.Point(603, 206);
             this.LblUsuarioN.Name = "LblUsuarioN";
             this.LblUsuarioN.Size = new System.Drawing.Size(155, 33);
             this.LblUsuarioN.TabIndex = 4;
@@ -138,7 +138,7 @@
             this.CircubarBienve.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.CircubarBienve.OuterMargin = -25;
             this.CircubarBienve.OuterWidth = 26;
-            this.CircubarBienve.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.CircubarBienve.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(220)))));
             this.CircubarBienve.ProgressWidth = 25;
             this.CircubarBienve.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.CircubarBienve.Size = new System.Drawing.Size(200, 200);
