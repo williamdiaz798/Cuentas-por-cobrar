@@ -255,6 +255,7 @@
             this.BtnCAgregar.TabIndex = 16;
             this.BtnCAgregar.Text = "Agregar";
             this.BtnCAgregar.UseVisualStyleBackColor = false;
+            this.BtnCAgregar.Click += new System.EventHandler(this.BtnCAgregar_Click);
             // 
             // ClientesAgregar
             // 
@@ -278,6 +279,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ClientesAgregar";
             this.Text = "ClientesAgregar";
+            this.Load += new System.EventHandler(this.ClientesAgregar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

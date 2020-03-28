@@ -120,56 +120,67 @@ namespace CuenasPorCobrar
 
         private void BtnCACorriente_Click(object sender, EventArgs e)
         {
+            TimerClien.Start();
             AbrirFormInicio(new ClientesCorriente());
         }
 
         private void BtnCMora_Click(object sender, EventArgs e)
         {
+            TimerClien.Start();
             AbrirFormInicio(new ClientesMora());
         }
 
         private void BtnCTodos_Click(object sender, EventArgs e)
         {
+            TimerClien.Start();
             AbrirFormInicio(new Clientes());
         }
 
         private void BtnCCrear_Click(object sender, EventArgs e)
         {
+            TimerClien.Start();
             AbrirFormInicio(new ClientesAgregar());
         }
 
         private void BtnCuVence_Click(object sender, EventArgs e)
         {
+            TimerCPV.Start();
             AbrirFormInicio(new CuentasPVencer());
         }
 
         private void BtnCuVencidas_Click(object sender, EventArgs e)
         {
+            TimerCPV.Start();
             AbrirFormInicio(new CuentasVencidas());
         }
 
         private void BtnCuCrear_Click(object sender, EventArgs e)
         {
+            TimerCPV.Start();
             AbrirFormInicio(new CuentaCrear());
         }
 
         private void BtnCuPago_Click(object sender, EventArgs e)
         {
+            TimerCPV.Start();
             AbrirFormInicio(new CuentasPago());
         }
 
         private void BtnCuentasT_Click(object sender, EventArgs e)
         {
+            TimerCPV.Start();
             AbrirFormInicio(new Cuentas());
         }
 
         private void BtnDeudores_Click(object sender, EventArgs e)
         {
+            TimerHistorial.Start();
             AbrirFormInicio(new ReporteDeudores());
         }
 
         private void BtnCuentasR_Click(object sender, EventArgs e)
         {
+            TimerHistorial.Start();
             AbrirFormInicio(new ReporteCuentas());
         }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.LblCuCrear = new System.Windows.Forms.Label();
             this.LblFechaEmision = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,13 +37,20 @@
             this.ClndFechaEmision = new System.Windows.Forms.MonthCalendar();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.TxtCuMonto = new System.Windows.Forms.TextBox();
             this.TxtCuFiador = new System.Windows.Forms.TextBox();
             this.BtnCAgregar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtCuCliente = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.PanelPeriodo = new System.Windows.Forms.Panel();
+            this.BtnPeriodos = new System.Windows.Forms.Button();
+            this.Btn12meses = new System.Windows.Forms.Button();
+            this.Btn24Meses = new System.Windows.Forms.Button();
+            this.Btn48Meses = new System.Windows.Forms.Button();
+            this.TimerPeriodos = new System.Windows.Forms.Timer(this.components);
+            this.PanelPeriodo.SuspendLayout();
             this.SuspendLayout();
             // 
             // LblCuCrear
@@ -125,6 +133,26 @@
             this.shapeContainer1.TabIndex = 10;
             this.shapeContainer1.TabStop = false;
             // 
+            // lineShape3
+            // 
+            this.lineShape3.BorderColor = System.Drawing.Color.White;
+            this.lineShape3.Enabled = false;
+            this.lineShape3.Name = "lineShape3";
+            this.lineShape3.X1 = 657;
+            this.lineShape3.X2 = 830;
+            this.lineShape3.Y1 = 320;
+            this.lineShape3.Y2 = 320;
+            // 
+            // lineShape2
+            // 
+            this.lineShape2.BorderColor = System.Drawing.Color.White;
+            this.lineShape2.Enabled = false;
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 297;
+            this.lineShape2.X2 = 470;
+            this.lineShape2.Y1 = 424;
+            this.lineShape2.Y2 = 424;
+            // 
             // TxtCuMonto
             // 
             this.TxtCuMonto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -166,18 +194,19 @@
             this.BtnCAgregar.TabIndex = 17;
             this.BtnCAgregar.Text = "Agregar";
             this.BtnCAgregar.UseVisualStyleBackColor = false;
+            this.BtnCAgregar.Click += new System.EventHandler(this.BtnCAgregar_Click);
             // 
-            // textBox1
+            // TxtCuCliente
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(652, 290);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 28);
-            this.textBox1.TabIndex = 19;
+            this.TxtCuCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.TxtCuCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtCuCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TxtCuCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCuCliente.ForeColor = System.Drawing.Color.DimGray;
+            this.TxtCuCliente.Location = new System.Drawing.Point(652, 290);
+            this.TxtCuCliente.Name = "TxtCuCliente";
+            this.TxtCuCliente.Size = new System.Drawing.Size(185, 28);
+            this.TxtCuCliente.TabIndex = 19;
             // 
             // label4
             // 
@@ -189,25 +218,99 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Cliente:";
             // 
-            // lineShape2
+            // PanelPeriodo
             // 
-            this.lineShape2.BorderColor = System.Drawing.Color.White;
-            this.lineShape2.Enabled = false;
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 297;
-            this.lineShape2.X2 = 470;
-            this.lineShape2.Y1 = 424;
-            this.lineShape2.Y2 = 424;
+            this.PanelPeriodo.Controls.Add(this.Btn48Meses);
+            this.PanelPeriodo.Controls.Add(this.Btn24Meses);
+            this.PanelPeriodo.Controls.Add(this.Btn12meses);
+            this.PanelPeriodo.Controls.Add(this.BtnPeriodos);
+            this.PanelPeriodo.Location = new System.Drawing.Point(657, 373);
+            this.PanelPeriodo.MaximumSize = new System.Drawing.Size(200, 120);
+            this.PanelPeriodo.MinimumSize = new System.Drawing.Size(200, 30);
+            this.PanelPeriodo.Name = "PanelPeriodo";
+            this.PanelPeriodo.Size = new System.Drawing.Size(200, 30);
+            this.PanelPeriodo.TabIndex = 20;
             // 
-            // lineShape3
+            // BtnPeriodos
             // 
-            this.lineShape3.BorderColor = System.Drawing.Color.White;
-            this.lineShape3.Enabled = false;
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 657;
-            this.lineShape3.X2 = 830;
-            this.lineShape3.Y1 = 320;
-            this.lineShape3.Y2 = 320;
+            this.BtnPeriodos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BtnPeriodos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnPeriodos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnPeriodos.FlatAppearance.BorderSize = 0;
+            this.BtnPeriodos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.BtnPeriodos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnPeriodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPeriodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPeriodos.ForeColor = System.Drawing.Color.White;
+            this.BtnPeriodos.Location = new System.Drawing.Point(0, 0);
+            this.BtnPeriodos.Name = "BtnPeriodos";
+            this.BtnPeriodos.Size = new System.Drawing.Size(200, 30);
+            this.BtnPeriodos.TabIndex = 32;
+            this.BtnPeriodos.Text = "Seleccionar...";
+            this.BtnPeriodos.UseVisualStyleBackColor = false;
+            this.BtnPeriodos.Click += new System.EventHandler(this.BtnPeriodos_Click);
+            // 
+            // Btn12meses
+            // 
+            this.Btn12meses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Btn12meses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn12meses.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btn12meses.FlatAppearance.BorderSize = 0;
+            this.Btn12meses.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Btn12meses.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.Btn12meses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn12meses.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn12meses.ForeColor = System.Drawing.Color.White;
+            this.Btn12meses.Location = new System.Drawing.Point(0, 30);
+            this.Btn12meses.Name = "Btn12meses";
+            this.Btn12meses.Size = new System.Drawing.Size(200, 30);
+            this.Btn12meses.TabIndex = 33;
+            this.Btn12meses.Text = "12 Meses";
+            this.Btn12meses.UseVisualStyleBackColor = false;
+            this.Btn12meses.Click += new System.EventHandler(this.Btn12meses_Click);
+            // 
+            // Btn24Meses
+            // 
+            this.Btn24Meses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Btn24Meses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn24Meses.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btn24Meses.FlatAppearance.BorderSize = 0;
+            this.Btn24Meses.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Btn24Meses.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.Btn24Meses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn24Meses.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn24Meses.ForeColor = System.Drawing.Color.White;
+            this.Btn24Meses.Location = new System.Drawing.Point(0, 60);
+            this.Btn24Meses.Name = "Btn24Meses";
+            this.Btn24Meses.Size = new System.Drawing.Size(200, 30);
+            this.Btn24Meses.TabIndex = 34;
+            this.Btn24Meses.Text = "24 Meses";
+            this.Btn24Meses.UseVisualStyleBackColor = false;
+            this.Btn24Meses.Click += new System.EventHandler(this.Btn24Meses_Click);
+            // 
+            // Btn48Meses
+            // 
+            this.Btn48Meses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Btn48Meses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn48Meses.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btn48Meses.FlatAppearance.BorderSize = 0;
+            this.Btn48Meses.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Btn48Meses.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.Btn48Meses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn48Meses.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn48Meses.ForeColor = System.Drawing.Color.White;
+            this.Btn48Meses.Location = new System.Drawing.Point(0, 90);
+            this.Btn48Meses.Name = "Btn48Meses";
+            this.Btn48Meses.Size = new System.Drawing.Size(200, 30);
+            this.Btn48Meses.TabIndex = 35;
+            this.Btn48Meses.Text = "48 Meses";
+            this.Btn48Meses.UseVisualStyleBackColor = false;
+            this.Btn48Meses.Click += new System.EventHandler(this.Btn48Meses_Click);
+            // 
+            // TimerPeriodos
+            // 
+            this.TimerPeriodos.Interval = 30;
+            this.TimerPeriodos.Tick += new System.EventHandler(this.TimerPeriodos_Tick);
             // 
             // CuentaCrear
             // 
@@ -215,7 +318,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1200, 570);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PanelPeriodo);
+            this.Controls.Add(this.TxtCuCliente);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.BtnCAgregar);
             this.Controls.Add(this.TxtCuFiador);
@@ -231,6 +335,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CuentaCrear";
             this.Text = "CuentaCrear";
+            this.PanelPeriodo.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,8 +355,14 @@
         private System.Windows.Forms.TextBox TxtCuFiador;
         private System.Windows.Forms.Button BtnCAgregar;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtCuCliente;
         private System.Windows.Forms.Label label4;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
+        private System.Windows.Forms.Panel PanelPeriodo;
+        private System.Windows.Forms.Button Btn24Meses;
+        private System.Windows.Forms.Button Btn12meses;
+        private System.Windows.Forms.Button BtnPeriodos;
+        private System.Windows.Forms.Button Btn48Meses;
+        private System.Windows.Forms.Timer TimerPeriodos;
     }
 }

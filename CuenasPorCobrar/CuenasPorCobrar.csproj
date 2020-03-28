@@ -63,8 +63,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cache\DatosUsuario.cs" />
+    <Compile Include="DataBase\ClientesData.cs" />
     <Compile Include="DataBase\conexionDB.cs" />
     <Compile Include="DataBase\CuentasData.cs" />
+    <Compile Include="DataBase\ReportesData.cs" />
     <Compile Include="DataBase\UsuariosData.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

@@ -1,7 +1,9 @@
-﻿using System;
+﻿using CuenasPorCobrar.DataBase;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +16,7 @@ namespace CuenasPorCobrar.PanelesOperador.Reportes
     {
         private bool isColladCuEstado;
         private int Estado;
+        CuentasData cuentas;
         public ReporteCuentas()
         {
             InitializeComponent();
@@ -45,6 +48,63 @@ namespace CuenasPorCobrar.PanelesOperador.Reportes
         {
             TimerCuEstado.Start();
             Estado = 1;
+
+            cuentas = new CuentasData();
+            SqlDataAdapter adap = cuentas.Cuentas();
+
+            DataTable dt = new DataTable();
+            adap.Fill(dt);
+            DGVCuentasRepo.DataSource = dt;
+            DGVCuentasRepo.AutoResizeColumns();
+            DGVCuentasRepo.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
+        private void BtnCuCorriente_Click(object sender, EventArgs e)
+        {
+            cuentas = new CuentasData();
+            SqlDataAdapter adap = cuentas.CuentasAlCorriente();
+
+            DataTable dt = new DataTable();
+            adap.Fill(dt);
+            DGVCuentasRepo.DataSource = dt;
+            DGVCuentasRepo.AutoResizeColumns();
+            DGVCuentasRepo.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
+        private void ReporteCuentas_Load(object sender, EventArgs e)
+        {
+            cuentas = new CuentasData();
+            SqlDataAdapter adap = cuentas.Cuentas();
+
+            DataTable dt = new DataTable();
+            adap.Fill(dt);
+            DGVCuentasRepo.DataSource = dt;
+            DGVCuentasRepo.AutoResizeColumns();
+            DGVCuentasRepo.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
+        private void BtnPVencer_Click(object sender, EventArgs e)
+        {
+            cuentas = new CuentasData();
+            SqlDataAdapter adap = cuentas.CuentasPorVencer();
+
+            DataTable dt = new DataTable();
+            adap.Fill(dt);
+            DGVCuentasRepo.DataSource = dt;
+            DGVCuentasRepo.AutoResizeColumns();
+            DGVCuentasRepo.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
+        private void BtnVencidas_Click(object sender, EventArgs e)
+        {
+            cuentas = new CuentasData();
+            SqlDataAdapter adap = cuentas.Cuentas();
+
+            DataTable dt = new DataTable();
+            adap.Fill(dt);
+            DGVCuentasRepo.DataSource = dt;
+            DGVCuentasRepo.AutoResizeColumns();
+            DGVCuentasRepo.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
     }
 }

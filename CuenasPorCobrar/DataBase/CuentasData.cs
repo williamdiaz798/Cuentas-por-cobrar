@@ -42,5 +42,13 @@ namespace CuenasPorCobrar.DataBase
             return Adapter;
             con.cerrar();
         }
+
+        public SqlDataAdapter CuentasAlCorriente()
+        {
+            SqlCommand cmd = new SqlCommand("exec CuentasAlCorriente", con.conecion());
+            SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+            return Adapter;
+            con.cerrar();
+        }
     }
 }
