@@ -36,12 +36,13 @@
             this.ClndFechaEmision = new System.Windows.Forms.MonthCalendar();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.TxtCuMonto = new System.Windows.Forms.TextBox();
             this.TxtCuFiador = new System.Windows.Forms.TextBox();
-            this.TxtCuPeriodo = new System.Windows.Forms.TextBox();
             this.BtnCAgregar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.SuspendLayout();
             // 
             // LblCuCrear
@@ -69,7 +70,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(186, 280);
+            this.label1.Location = new System.Drawing.Point(186, 285);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 29);
             this.label1.TabIndex = 6;
@@ -79,7 +80,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(183, 343);
+            this.label2.Location = new System.Drawing.Point(186, 393);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 29);
             this.label2.TabIndex = 7;
@@ -89,7 +90,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(183, 402);
+            this.label3.Location = new System.Drawing.Point(551, 372);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 29);
             this.label3.TabIndex = 8;
@@ -106,10 +107,10 @@
             this.lineShape1.BorderColor = System.Drawing.Color.White;
             this.lineShape1.Enabled = false;
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 406;
-            this.lineShape1.X2 = 751;
-            this.lineShape1.Y1 = 311;
-            this.lineShape1.Y2 = 311;
+            this.lineShape1.X1 = 297;
+            this.lineShape1.X2 = 470;
+            this.lineShape1.Y1 = 317;
+            this.lineShape1.Y2 = 317;
             // 
             // shapeContainer1
             // 
@@ -124,26 +125,6 @@
             this.shapeContainer1.TabIndex = 10;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape3
-            // 
-            this.lineShape3.BorderColor = System.Drawing.Color.White;
-            this.lineShape3.Enabled = false;
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 406;
-            this.lineShape3.X2 = 751;
-            this.lineShape3.Y1 = 428;
-            this.lineShape3.Y2 = 428;
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderColor = System.Drawing.Color.White;
-            this.lineShape2.Enabled = false;
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 405;
-            this.lineShape2.X2 = 750;
-            this.lineShape2.Y1 = 372;
-            this.lineShape2.Y2 = 372;
-            // 
             // TxtCuMonto
             // 
             this.TxtCuMonto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -151,9 +132,9 @@
             this.TxtCuMonto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtCuMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCuMonto.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtCuMonto.Location = new System.Drawing.Point(405, 281);
+            this.TxtCuMonto.Location = new System.Drawing.Point(297, 284);
             this.TxtCuMonto.Name = "TxtCuMonto";
-            this.TxtCuMonto.Size = new System.Drawing.Size(346, 28);
+            this.TxtCuMonto.Size = new System.Drawing.Size(173, 28);
             this.TxtCuMonto.TabIndex = 12;
             this.TxtCuMonto.TextChanged += new System.EventHandler(this.TxtCNombre_TextChanged);
             // 
@@ -164,22 +145,10 @@
             this.TxtCuFiador.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtCuFiador.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCuFiador.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtCuFiador.Location = new System.Drawing.Point(406, 343);
+            this.TxtCuFiador.Location = new System.Drawing.Point(293, 394);
             this.TxtCuFiador.Name = "TxtCuFiador";
-            this.TxtCuFiador.Size = new System.Drawing.Size(346, 28);
+            this.TxtCuFiador.Size = new System.Drawing.Size(180, 28);
             this.TxtCuFiador.TabIndex = 13;
-            // 
-            // TxtCuPeriodo
-            // 
-            this.TxtCuPeriodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.TxtCuPeriodo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtCuPeriodo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TxtCuPeriodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCuPeriodo.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtCuPeriodo.Location = new System.Drawing.Point(405, 399);
-            this.TxtCuPeriodo.Name = "TxtCuPeriodo";
-            this.TxtCuPeriodo.Size = new System.Drawing.Size(346, 28);
-            this.TxtCuPeriodo.TabIndex = 14;
             // 
             // BtnCAgregar
             // 
@@ -198,14 +167,57 @@
             this.BtnCAgregar.Text = "Agregar";
             this.BtnCAgregar.UseVisualStyleBackColor = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.textBox1.Location = new System.Drawing.Point(652, 290);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(185, 28);
+            this.textBox1.TabIndex = 19;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(551, 289);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 29);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Cliente:";
+            // 
+            // lineShape2
+            // 
+            this.lineShape2.BorderColor = System.Drawing.Color.White;
+            this.lineShape2.Enabled = false;
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 297;
+            this.lineShape2.X2 = 470;
+            this.lineShape2.Y1 = 424;
+            this.lineShape2.Y2 = 424;
+            // 
+            // lineShape3
+            // 
+            this.lineShape3.BorderColor = System.Drawing.Color.White;
+            this.lineShape3.Enabled = false;
+            this.lineShape3.Name = "lineShape3";
+            this.lineShape3.X1 = 657;
+            this.lineShape3.X2 = 830;
+            this.lineShape3.Y1 = 320;
+            this.lineShape3.Y2 = 320;
+            // 
             // CuentaCrear
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1200, 570);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.BtnCAgregar);
-            this.Controls.Add(this.TxtCuPeriodo);
             this.Controls.Add(this.TxtCuFiador);
             this.Controls.Add(this.TxtCuMonto);
             this.Controls.Add(this.ClndFechaEmision);
@@ -235,10 +247,11 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private System.Windows.Forms.TextBox TxtCuMonto;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private System.Windows.Forms.TextBox TxtCuFiador;
-        private System.Windows.Forms.TextBox TxtCuPeriodo;
         private System.Windows.Forms.Button BtnCAgregar;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
     }
 }

@@ -11,13 +11,36 @@ namespace CuenasPorCobrar.DataBase
     {
         conexionDB con = new conexionDB();
 
+        public SqlDataAdapter Cuentas()
+        {
+            SqlCommand cmd = new SqlCommand("exec Cuentas", con.conecion());
+            SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+            return Adapter;
+            con.cerrar();
+        }
+
         public SqlDataAdapter CuentasVencenHoy()
         {
-            int tipo = 0;
             SqlCommand cmd = new SqlCommand("exec CuentasVenceHoy", con.conecion());
             SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
             return Adapter;
             con.cerrar();   
+        }
+
+        public SqlDataAdapter CuentasPorVencer()
+        {
+            SqlCommand cmd = new SqlCommand("exec cuentasPorVencer", con.conecion());
+            SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+            return Adapter;
+            con.cerrar();
+        }
+
+        public SqlDataAdapter CuentasVencidas()
+        {
+            SqlCommand cmd = new SqlCommand("exec CuentasVencidas", con.conecion());
+            SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+            return Adapter;
+            con.cerrar();
         }
     }
 }
