@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CuenasPorCobrar.DataBase;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,8 +14,11 @@ namespace CuenasPorCobrar.PanelesOperador.Cuentas
     public partial class CuentaCrear : Form
     {
         private bool isCollapseTiempos;
-        private int meses = 0;
-
+        private int año = 0;
+        private int ultimaCuenta;
+        private string fechaEmi, fechaVenci;
+        private int year, mes, dia;
+        CuentasData cuentas;
         public CuentaCrear()
         {
             InitializeComponent();
@@ -60,21 +64,21 @@ namespace CuenasPorCobrar.PanelesOperador.Cuentas
         private void Btn12meses_Click(object sender, EventArgs e)
         {
             BtnPeriodos.Text = "12 Meses";
-            meses = 12;
+            año = 1;
             TimerPeriodos.Start();
         }
 
         private void Btn24Meses_Click(object sender, EventArgs e)
         {
             BtnPeriodos.Text = "24 Meses";
-            meses = 24;
+            año = 2;
             TimerPeriodos.Start();
         }
 
         private void Btn48Meses_Click(object sender, EventArgs e)
         {
-            BtnPeriodos.Text = "48 Meses";
-            meses = 48;
+            BtnPeriodos.Text = "36 Meses";
+            año = 3;
             TimerPeriodos.Start();
         }
 
@@ -92,7 +96,7 @@ namespace CuenasPorCobrar.PanelesOperador.Cuentas
             {
                 MessageBox.Show("Ingrese el Numero de cliente");
             }
-            else if (meses == 0)
+            else if (año == 0)
             {
                 MessageBox.Show("Seleccione el periodo");
             }
@@ -100,7 +104,19 @@ namespace CuenasPorCobrar.PanelesOperador.Cuentas
             {
                 if (MessageBox.Show("Desea crear la cuenta?", "Cerrar sin Guardar?", MessageBoxButtons.YesNoCancel) == DialogResult.Yes)
                 {
+                    cuentas = new CuentasData();
+                    ultimaCuenta = cuentas.CuentaUltima() + 1;
+
+                    year = ClndFechaEmision.SelectionRange.Start.Year;
+                    mes = ClndFechaEmision.SelectionRange.Start.Month;
+                    dia = ClndFechaEmision.SelectionRange.Start.Day;
+
+                    DateTime fechaEmi = Convert.ToDateTime(""+ year +"/"+ mes + "/" + dia +"");
+                    DateTime fechaVenci = Convert.ToDateTime("" + (year + año) + "/" + mes + "/" + dia + "");
+
+                    cuentas.CuentaAgregar(ultimaCuenta, fechaEmi, TxtCuMonto.Text, TxtCuFiador.Text, TxtCuCliente.Text, fechaVenci, año);
                     
+                    MessageBox.Show("Datos guardados con exito");
                 }
                 
                 

@@ -15,6 +15,7 @@ namespace CuenasPorCobrar.PanelesOperador.Cuentas
     {
         // TP = tipo pago
         private bool isCollapseTP;
+        private int tipoPago;
         public CuentasPago()
         {
             InitializeComponent();
@@ -24,7 +25,6 @@ namespace CuenasPorCobrar.PanelesOperador.Cuentas
         {
             if (isCollapseTP)
             {
-                BtnFormaDePago.Image = Resources.ArrowDown16;
                 PanelFormaPago.Height -= 10;
                 if (PanelFormaPago.Size == PanelFormaPago.MinimumSize)
                 {
@@ -34,7 +34,6 @@ namespace CuenasPorCobrar.PanelesOperador.Cuentas
             }
             else
             {
-                BtnFormaDePago.Image = Resources.ArrowUp16;
                 PanelFormaPago.Height += 10;
                 if (PanelFormaPago.Size == PanelFormaPago.MaximumSize)
                 {
@@ -47,6 +46,56 @@ namespace CuenasPorCobrar.PanelesOperador.Cuentas
         private void BtnFormaDePago_Click(object sender, EventArgs e)
         {
             TimerTipoPago.Start();
+        }
+
+        private void BtnContado_Click(object sender, EventArgs e)
+        {
+            tipoPago = 1;
+            button4.Text = "Contado";
+            TimerTipoPago.Start();
+        }
+
+        private void BtnCredito_Click(object sender, EventArgs e)
+        {
+            tipoPago = 2;
+            button4.Text = "Credito";
+            TimerTipoPago.Start();
+        }
+
+        private void BtnCheque_Click(object sender, EventArgs e)
+        {
+            tipoPago = 3;
+            button4.Text = "Cheque";
+            TimerTipoPago.Start();
+        }
+
+        private void BtnCuAgregarPago_Click(object sender, EventArgs e)
+        {
+            if (TxtCuCliente.Text == "")
+            {
+                MessageBox.Show("Ingrese el numero de cliente");
+            }
+            else if (TxtCuenta.Text == "")
+            {
+                MessageBox.Show("Ingrese el numero de cuenta");
+            }
+            else if (TxtCuTotalPago.Text == "")
+            {
+                MessageBox.Show("Ingrese el total a pagar");
+            }
+            else if (tipoPago == 0)
+            {
+                MessageBox.Show("Selecione el tipo de pago");
+            }
+            else
+            {
+                if (MessageBox.Show("Desea guardar el pago?", "Cerrar sin Guardar?", MessageBoxButtons.YesNoCancel) == DialogResult.Yes)
+                {
+                    
+                    MessageBox.Show("Datos ingresados correctamente");
+                }
+            }
+           
         }
     }
 }

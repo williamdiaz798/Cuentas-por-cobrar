@@ -24,7 +24,7 @@ namespace CuenasPorCobrar.PanelesOperador.Cuentas
         private void Cuentas_Load(object sender, EventArgs e)
         {
             cuentas = new CuentasData();
-            SqlDataAdapter adap = cuentas.CuentasVencenHoy();
+            SqlDataAdapter adap = cuentas.Cuentas();
 
             DataTable dt = new DataTable();
             adap.Fill(dt);

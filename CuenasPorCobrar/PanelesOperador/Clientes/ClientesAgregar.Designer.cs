@@ -75,7 +75,7 @@
             this.LblCApellido.AutoSize = true;
             this.LblCApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCApellido.ForeColor = System.Drawing.Color.White;
-            this.LblCApellido.Location = new System.Drawing.Point(299, 185);
+            this.LblCApellido.Location = new System.Drawing.Point(300, 198);
             this.LblCApellido.Name = "LblCApellido";
             this.LblCApellido.Size = new System.Drawing.Size(108, 29);
             this.LblCApellido.TabIndex = 6;
@@ -108,19 +108,19 @@
             this.LblCTelefono.AutoSize = true;
             this.LblCTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCTelefono.ForeColor = System.Drawing.Color.White;
-            this.LblCTelefono.Location = new System.Drawing.Point(299, 338);
+            this.LblCTelefono.Location = new System.Drawing.Point(300, 338);
             this.LblCTelefono.Name = "LblCTelefono";
-            this.LblCTelefono.Size = new System.Drawing.Size(116, 29);
+            this.LblCTelefono.Size = new System.Drawing.Size(175, 29);
             this.LblCTelefono.TabIndex = 9;
-            this.LblCTelefono.Text = "Telefono:";
+            this.LblCTelefono.Text = "Telefono: +503";
             // 
             // lineShape1
             // 
             this.lineShape1.BorderColor = System.Drawing.Color.White;
             this.lineShape1.Enabled = false;
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 451;
-            this.lineShape1.X2 = 796;
+            this.lineShape1.X1 = 476;
+            this.lineShape1.X2 = 821;
             this.lineShape1.Y1 = 156;
             this.lineShape1.Y2 = 156;
             // 
@@ -144,8 +144,8 @@
             this.lineShape5.BorderColor = System.Drawing.Color.White;
             this.lineShape5.Enabled = false;
             this.lineShape5.Name = "lineShape5";
-            this.lineShape5.X1 = 450;
-            this.lineShape5.X2 = 795;
+            this.lineShape5.X1 = 475;
+            this.lineShape5.X2 = 820;
             this.lineShape5.Y1 = 435;
             this.lineShape5.Y2 = 435;
             // 
@@ -154,8 +154,8 @@
             this.lineShape4.BorderColor = System.Drawing.Color.White;
             this.lineShape4.Enabled = false;
             this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 451;
-            this.lineShape4.X2 = 796;
+            this.lineShape4.X1 = 476;
+            this.lineShape4.X2 = 821;
             this.lineShape4.Y1 = 366;
             this.lineShape4.Y2 = 366;
             // 
@@ -164,8 +164,8 @@
             this.lineShape3.BorderColor = System.Drawing.Color.White;
             this.lineShape3.Enabled = false;
             this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 451;
-            this.lineShape3.X2 = 796;
+            this.lineShape3.X1 = 476;
+            this.lineShape3.X2 = 821;
             this.lineShape3.Y1 = 299;
             this.lineShape3.Y2 = 299;
             // 
@@ -174,8 +174,8 @@
             this.lineShape2.BorderColor = System.Drawing.Color.White;
             this.lineShape2.Enabled = false;
             this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 451;
-            this.lineShape2.X2 = 796;
+            this.lineShape2.X1 = 476;
+            this.lineShape2.X2 = 821;
             this.lineShape2.Y1 = 226;
             this.lineShape2.Y2 = 226;
             // 
@@ -186,7 +186,7 @@
             this.TxtCNombre.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtCNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtCNombre.Location = new System.Drawing.Point(450, 125);
+            this.TxtCNombre.Location = new System.Drawing.Point(478, 125);
             this.TxtCNombre.Name = "TxtCNombre";
             this.TxtCNombre.Size = new System.Drawing.Size(346, 28);
             this.TxtCNombre.TabIndex = 11;
@@ -198,7 +198,7 @@
             this.TxtCApellido.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtCApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCApellido.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtCApellido.Location = new System.Drawing.Point(451, 198);
+            this.TxtCApellido.Location = new System.Drawing.Point(479, 198);
             this.TxtCApellido.Name = "TxtCApellido";
             this.TxtCApellido.Size = new System.Drawing.Size(346, 28);
             this.TxtCApellido.TabIndex = 12;
@@ -210,7 +210,7 @@
             this.TxtCDireccion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtCDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCDireccion.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtCDireccion.Location = new System.Drawing.Point(451, 270);
+            this.TxtCDireccion.Location = new System.Drawing.Point(479, 270);
             this.TxtCDireccion.Name = "TxtCDireccion";
             this.TxtCDireccion.Size = new System.Drawing.Size(346, 28);
             this.TxtCDireccion.TabIndex = 13;
@@ -222,7 +222,7 @@
             this.TxtCTelefono.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtCTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCTelefono.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtCTelefono.Location = new System.Drawing.Point(451, 338);
+            this.TxtCTelefono.Location = new System.Drawing.Point(479, 338);
             this.TxtCTelefono.Name = "TxtCTelefono";
             this.TxtCTelefono.Size = new System.Drawing.Size(346, 28);
             this.TxtCTelefono.TabIndex = 14;
@@ -234,7 +234,7 @@
             this.TxtCCorreo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtCCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCCorreo.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtCCorreo.Location = new System.Drawing.Point(451, 406);
+            this.TxtCCorreo.Location = new System.Drawing.Point(479, 406);
             this.TxtCCorreo.Name = "TxtCCorreo";
             this.TxtCCorreo.Size = new System.Drawing.Size(346, 28);
             this.TxtCCorreo.TabIndex = 15;

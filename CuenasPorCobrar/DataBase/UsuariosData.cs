@@ -29,5 +29,13 @@ namespace CuenasPorCobrar.DataBase
             con.cerrar();
             return tipo;
         }
+
+        public SqlDataAdapter Usuarios()
+        {
+            SqlCommand cmd = new SqlCommand("exec Usuarios", con.conecion());
+            SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+            return Adapter;
+            con.cerrar();
+        }
     }
 }

@@ -34,33 +34,28 @@
             this.LblCAgregar = new System.Windows.Forms.Label();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape8 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape7 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.TxtCuMonto = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtMon = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.TxtCuTotalPago = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.TxtFechaVencimiento = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.TxtCuenta = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.BtnFormaPago = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.TxtFechaEmision = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.BtnCuAgregarPago = new System.Windows.Forms.Button();
             this.PanelFormaPago = new System.Windows.Forms.Panel();
             this.BtnCredito = new System.Windows.Forms.Button();
             this.BtnContado = new System.Windows.Forms.Button();
             this.BtnFormaDePago = new System.Windows.Forms.Button();
             this.TimerTipoPago = new System.Windows.Forms.Timer(this.components);
+            this.BtnCheque = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.PanelFormaPago.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // TxtCuCliente
@@ -113,46 +108,22 @@
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape8,
-            this.lineShape7,
             this.lineShape5,
             this.lineShape4,
-            this.lineShape3,
-            this.lineShape2,
             this.lineShape1});
             this.shapeContainer1.Size = new System.Drawing.Size(1200, 570);
             this.shapeContainer1.TabIndex = 15;
             this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape8
-            // 
-            this.lineShape8.BorderColor = System.Drawing.Color.White;
-            this.lineShape8.Enabled = false;
-            this.lineShape8.Name = "lineShape8";
-            this.lineShape8.X1 = 798;
-            this.lineShape8.X2 = 1103;
-            this.lineShape8.Y1 = 407;
-            this.lineShape8.Y2 = 407;
-            // 
-            // lineShape7
-            // 
-            this.lineShape7.BorderColor = System.Drawing.Color.White;
-            this.lineShape7.Enabled = false;
-            this.lineShape7.Name = "lineShape7";
-            this.lineShape7.X1 = 798;
-            this.lineShape7.X2 = 1103;
-            this.lineShape7.Y1 = 344;
-            this.lineShape7.Y2 = 344;
             // 
             // lineShape5
             // 
             this.lineShape5.BorderColor = System.Drawing.Color.White;
             this.lineShape5.Enabled = false;
             this.lineShape5.Name = "lineShape5";
-            this.lineShape5.X1 = 799;
-            this.lineShape5.X2 = 1104;
-            this.lineShape5.Y1 = 183;
-            this.lineShape5.Y2 = 183;
+            this.lineShape5.X1 = 226;
+            this.lineShape5.X2 = 531;
+            this.lineShape5.Y1 = 256;
+            this.lineShape5.Y2 = 256;
             // 
             // lineShape4
             // 
@@ -161,74 +132,8 @@
             this.lineShape4.Name = "lineShape4";
             this.lineShape4.X1 = 226;
             this.lineShape4.X2 = 530;
-            this.lineShape4.Y1 = 376;
-            this.lineShape4.Y2 = 376;
-            // 
-            // lineShape3
-            // 
-            this.lineShape3.BorderColor = System.Drawing.Color.White;
-            this.lineShape3.Enabled = false;
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 226;
-            this.lineShape3.X2 = 530;
-            this.lineShape3.Y1 = 311;
-            this.lineShape3.Y2 = 311;
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderColor = System.Drawing.Color.White;
-            this.lineShape2.Enabled = false;
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 227;
-            this.lineShape2.X2 = 530;
-            this.lineShape2.Y1 = 247;
-            this.lineShape2.Y2 = 247;
-            // 
-            // TxtCuMonto
-            // 
-            this.TxtCuMonto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.TxtCuMonto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtCuMonto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TxtCuMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCuMonto.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtCuMonto.Location = new System.Drawing.Point(225, 214);
-            this.TxtCuMonto.Name = "TxtCuMonto";
-            this.TxtCuMonto.Size = new System.Drawing.Size(306, 28);
-            this.TxtCuMonto.TabIndex = 17;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(75, 213);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 29);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Monto:";
-            // 
-            // TxtMon
-            // 
-            this.TxtMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.TxtMon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtMon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TxtMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMon.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtMon.Location = new System.Drawing.Point(225, 282);
-            this.TxtMon.Name = "TxtMon";
-            this.TxtMon.Size = new System.Drawing.Size(306, 28);
-            this.TxtMon.TabIndex = 19;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(75, 281);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 29);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Periodo:";
+            this.lineShape4.Y1 = 325;
+            this.lineShape4.Y2 = 325;
             // 
             // TxtCuTotalPago
             // 
@@ -237,7 +142,7 @@
             this.TxtCuTotalPago.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtCuTotalPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCuTotalPago.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtCuTotalPago.Location = new System.Drawing.Point(225, 347);
+            this.TxtCuTotalPago.Location = new System.Drawing.Point(230, 297);
             this.TxtCuTotalPago.Name = "TxtCuTotalPago";
             this.TxtCuTotalPago.Size = new System.Drawing.Size(306, 28);
             this.TxtCuTotalPago.TabIndex = 21;
@@ -247,34 +152,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(75, 346);
+            this.label3.Location = new System.Drawing.Point(75, 297);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 29);
             this.label3.TabIndex = 20;
             this.label3.Text = "Total Pago:";
-            // 
-            // TxtFechaVencimiento
-            // 
-            this.TxtFechaVencimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.TxtFechaVencimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxtFechaVencimiento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TxtFechaVencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFechaVencimiento.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtFechaVencimiento.Location = new System.Drawing.Point(803, 377);
-            this.TxtFechaVencimiento.Name = "TxtFechaVencimiento";
-            this.TxtFechaVencimiento.Size = new System.Drawing.Size(346, 28);
-            this.TxtFechaVencimiento.TabIndex = 23;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(576, 376);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(225, 29);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Fecha Vencimiento:";
             // 
             // TxtCuenta
             // 
@@ -283,7 +165,7 @@
             this.TxtCuenta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCuenta.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtCuenta.Location = new System.Drawing.Point(800, 152);
+            this.TxtCuenta.Location = new System.Drawing.Point(230, 227);
             this.TxtCuenta.Name = "TxtCuenta";
             this.TxtCuenta.Size = new System.Drawing.Size(305, 28);
             this.TxtCuenta.TabIndex = 25;
@@ -293,30 +175,18 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(576, 151);
+            this.label5.Location = new System.Drawing.Point(75, 226);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 29);
             this.label5.TabIndex = 24;
             this.label5.Text = "Cuenta:";
-            // 
-            // BtnFormaPago
-            // 
-            this.BtnFormaPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.BtnFormaPago.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BtnFormaPago.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnFormaPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnFormaPago.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnFormaPago.Location = new System.Drawing.Point(800, 213);
-            this.BtnFormaPago.Name = "BtnFormaPago";
-            this.BtnFormaPago.Size = new System.Drawing.Size(346, 28);
-            this.BtnFormaPago.TabIndex = 27;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(576, 212);
+            this.label6.Location = new System.Drawing.Point(574, 177);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(152, 29);
             this.label6.TabIndex = 26;
@@ -329,21 +199,10 @@
             this.TxtFechaEmision.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtFechaEmision.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFechaEmision.ForeColor = System.Drawing.Color.DimGray;
-            this.TxtFechaEmision.Location = new System.Drawing.Point(803, 312);
+            this.TxtFechaEmision.Location = new System.Drawing.Point(801, 307);
             this.TxtFechaEmision.Name = "TxtFechaEmision";
             this.TxtFechaEmision.Size = new System.Drawing.Size(302, 28);
             this.TxtFechaEmision.TabIndex = 29;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(576, 311);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(179, 29);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Fecha Emision:";
             // 
             // BtnCuAgregarPago
             // 
@@ -361,15 +220,17 @@
             this.BtnCuAgregarPago.TabIndex = 30;
             this.BtnCuAgregarPago.Text = "Agregar";
             this.BtnCuAgregarPago.UseVisualStyleBackColor = false;
+            this.BtnCuAgregarPago.Click += new System.EventHandler(this.BtnCuAgregarPago_Click);
             // 
             // PanelFormaPago
             // 
             this.PanelFormaPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.PanelFormaPago.Controls.Add(this.BtnCheque);
             this.PanelFormaPago.Controls.Add(this.BtnCredito);
             this.PanelFormaPago.Controls.Add(this.BtnContado);
             this.PanelFormaPago.Controls.Add(this.BtnFormaDePago);
-            this.PanelFormaPago.Location = new System.Drawing.Point(803, 214);
-            this.PanelFormaPago.MaximumSize = new System.Drawing.Size(150, 90);
+            this.PanelFormaPago.Location = new System.Drawing.Point(801, 179);
+            this.PanelFormaPago.MaximumSize = new System.Drawing.Size(150, 120);
             this.PanelFormaPago.MinimumSize = new System.Drawing.Size(150, 30);
             this.PanelFormaPago.Name = "PanelFormaPago";
             this.PanelFormaPago.Size = new System.Drawing.Size(150, 30);
@@ -392,6 +253,7 @@
             this.BtnCredito.TabIndex = 33;
             this.BtnCredito.Text = "Credito";
             this.BtnCredito.UseVisualStyleBackColor = false;
+            this.BtnCredito.Click += new System.EventHandler(this.BtnCredito_Click);
             // 
             // BtnContado
             // 
@@ -410,6 +272,7 @@
             this.BtnContado.TabIndex = 32;
             this.BtnContado.Text = "Contado";
             this.BtnContado.UseVisualStyleBackColor = false;
+            this.BtnContado.Click += new System.EventHandler(this.BtnContado_Click);
             // 
             // BtnFormaDePago
             // 
@@ -435,28 +298,130 @@
             this.TimerTipoPago.Interval = 30;
             this.TimerTipoPago.Tick += new System.EventHandler(this.TimerTipoPago_Tick);
             // 
+            // BtnCheque
+            // 
+            this.BtnCheque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BtnCheque.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCheque.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCheque.FlatAppearance.BorderSize = 0;
+            this.BtnCheque.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.BtnCheque.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnCheque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCheque.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCheque.ForeColor = System.Drawing.Color.White;
+            this.BtnCheque.Location = new System.Drawing.Point(0, 90);
+            this.BtnCheque.Name = "BtnCheque";
+            this.BtnCheque.Size = new System.Drawing.Size(150, 30);
+            this.BtnCheque.TabIndex = 34;
+            this.BtnCheque.Text = "Cheque";
+            this.BtnCheque.UseVisualStyleBackColor = false;
+            this.BtnCheque.Click += new System.EventHandler(this.BtnCheque_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Location = new System.Drawing.Point(801, 179);
+            this.panel1.MaximumSize = new System.Drawing.Size(150, 120);
+            this.panel1.MinimumSize = new System.Drawing.Size(150, 30);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(150, 30);
+            this.panel1.TabIndex = 31;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 90);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 30);
+            this.button1.TabIndex = 34;
+            this.button1.Text = "Cheque";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.BtnCheque_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(0, 60);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(150, 30);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "Credito";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.BtnCredito_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(0, 30);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 30);
+            this.button3.TabIndex = 32;
+            this.button3.Text = "Contado";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.BtnContado_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(0, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(150, 30);
+            this.button4.TabIndex = 31;
+            this.button4.Text = "Seleccionar...";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.BtnFormaDePago_Click);
+            // 
             // CuentasPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1200, 570);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelFormaPago);
             this.Controls.Add(this.BtnCuAgregarPago);
             this.Controls.Add(this.TxtFechaEmision);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.BtnFormaPago);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.TxtCuenta);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.TxtFechaVencimiento);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.TxtCuTotalPago);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.TxtMon);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.TxtCuMonto);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.LblCAgregar);
             this.Controls.Add(this.TxtCuCliente);
             this.Controls.Add(this.LblCuCLiente);
@@ -466,6 +431,7 @@
             this.Name = "CuentasPago";
             this.Text = "CuentasPago";
             this.PanelFormaPago.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -478,31 +444,25 @@
         private System.Windows.Forms.Label LblCAgregar;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape8;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape7;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape5;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
-        private System.Windows.Forms.TextBox TxtCuMonto;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtMon;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TxtCuTotalPago;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TxtFechaVencimiento;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TxtCuenta;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox BtnFormaPago;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TxtFechaEmision;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button BtnCuAgregarPago;
         private System.Windows.Forms.Panel PanelFormaPago;
         private System.Windows.Forms.Button BtnFormaDePago;
         private System.Windows.Forms.Button BtnCredito;
         private System.Windows.Forms.Button BtnContado;
         private System.Windows.Forms.Timer TimerTipoPago;
+        private System.Windows.Forms.Button BtnCheque;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

@@ -1,7 +1,9 @@
-﻿using System;
+﻿using CuenasPorCobrar.DataBase;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,8 @@ namespace CuenasPorCobrar.PanelesAdministrador
         //PanelSuperAdmin panelSuper = new PanelSuperAdmin();
 
         AgregarUsuarios Agregar = new AgregarUsuarios();
+
+        UsuariosData usuarios;
 
         public Usuarios()
         {
@@ -47,9 +51,21 @@ namespace CuenasPorCobrar.PanelesAdministrador
         private void BtnAgregar_Click_1(object sender, EventArgs e)
         {
             label1.Hide();
-            dataGridView1.Hide();
+            DGVUsuarios.Hide();
             BtnAgregar.Hide();
             llamarForm(new AgregarUsuarios());
+        }
+
+        private void PanelContenedorUser_Paint(object sender, PaintEventArgs e)
+        {
+            usuarios = new UsuariosData();
+            SqlDataAdapter adap = usuarios.Usuarios();
+
+            DataTable dt = new DataTable();
+            adap.Fill(dt);
+            DGVUsuarios.DataSource = dt;
+            DGVUsuarios.AutoResizeColumns();
+            DGVUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
     }
 }
