@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace CuenasPorCobrar.DataBase
 {
-    class UsuariosData
+    class UsuariosData : conexionDB
     {
-        conexionDB con = new conexionDB();
+        //conexionDB con = new conexionDB();
 
         public int Login(string usuario, string pass)
         {
             int tipo = 0; 
             
 
-            SqlCommand cmd = new SqlCommand("exec UsuariosLogin @Usuario = '"+ usuario +"', @Pass = '"+ pass +"'", con.conecion());
+            SqlCommand cmd = new SqlCommand("exec UsuariosLogin @Usuario = '"+ usuario +"', @Pass = '"+ pass +"'", conecion());
 
             
             SqlDataReader reader = cmd.ExecuteReader();
@@ -26,16 +26,16 @@ namespace CuenasPorCobrar.DataBase
                 tipo = int.Parse(reader["IdTipo"].ToString());
             }
 
-            con.cerrar();
+            cerrar();
             return tipo;
         }
 
         public SqlDataAdapter Usuarios()
         {
-            SqlCommand cmd = new SqlCommand("exec Usuarios", con.conecion());
+            SqlCommand cmd = new SqlCommand("exec Usuarios", conecion());
             SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
             return Adapter;
-            con.cerrar();
+            cerrar();
         }
     }
 }

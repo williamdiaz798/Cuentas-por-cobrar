@@ -20,7 +20,7 @@ namespace CuenasPorCobrar.PanelesOperador.Clientes
             InitializeComponent();
         }
 
-        private void Clientes_Load(object sender, EventArgs e)
+        private void Clientes_Load(object sender, EventArgs e) 
         {
             cuentas = new ClientesData();
             SqlDataAdapter adap = cuentas.Clientes();

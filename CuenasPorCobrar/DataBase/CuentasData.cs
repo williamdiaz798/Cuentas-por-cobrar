@@ -7,65 +7,65 @@ using System.Data.SqlClient;
 
 namespace CuenasPorCobrar.DataBase
 {
-    class CuentasData
+    class CuentasData : conexionDB
     {
-        conexionDB con = new conexionDB();
+        //conexionDB con = new conexionDB();
         private int ultimaCuenta;
         public SqlDataAdapter Cuentas()
         {
-            SqlCommand cmd = new SqlCommand("exec Cuentas", con.conecion());
+            SqlCommand cmd = new SqlCommand("exec Cuentas", conecion());
             SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
             return Adapter;
-            con.cerrar();
+            cerrar();
         }
 
         public SqlDataAdapter CuentasVencenHoy()
         {
-            SqlCommand cmd = new SqlCommand("exec CuentasVenceHoy", con.conecion());
+            SqlCommand cmd = new SqlCommand("exec CuentasVenceHoy", conecion());
             SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
             return Adapter;
-            con.cerrar();   
+            cerrar();   
         }
 
         public SqlDataAdapter CuentasPorVencer()
         {
-            SqlCommand cmd = new SqlCommand("exec cuentasPorVencer", con.conecion());
+            SqlCommand cmd = new SqlCommand("exec cuentasPorVencer", conecion());
             SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
             return Adapter;
-            con.cerrar();
+            cerrar();
         }
 
         public SqlDataAdapter CuentasVencidas()
         {
-            SqlCommand cmd = new SqlCommand("exec CuentasVencidas", con.conecion());
+            SqlCommand cmd = new SqlCommand("exec CuentasVencidas", conecion());
             SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
             return Adapter;
-            con.cerrar();
+            cerrar();
         }
 
         public SqlDataAdapter CuentasAlCorriente()
         {
-            SqlCommand cmd = new SqlCommand("exec CuentasAlCorriente", con.conecion());
+            SqlCommand cmd = new SqlCommand("exec CuentasAlCorriente", conecion());
             SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
             return Adapter;
-            con.cerrar();
+            cerrar();
         }
 
         public void CuentaAgregar(int IdCuenta, DateTime fechaEmision, string monto, string fiador, string cliente, DateTime fechaVencimiento, int Periodo)
         {
-            SqlCommand cmd = new SqlCommand("exec AgregarCuenta @IdCuenta = "+ IdCuenta + ", @FechaEmision = N'" + fechaEmision + "', @Monto = "+ monto + ", @Fiador = '"+ fiador + "', @Cliente = "+ cliente + ", @FechaVencimiento = N'"+ fechaVencimiento + "', @IdPeriodo = "+ Periodo +"", con.conecion());
+            SqlCommand cmd = new SqlCommand("exec AgregarCuenta @IdCuenta = "+ IdCuenta + ", @FechaEmision = N'" + fechaEmision + "', @Monto = "+ monto + ", @Fiador = '"+ fiador + "', @Cliente = "+ cliente + ", @FechaVencimiento = N'"+ fechaVencimiento + "', @IdPeriodo = "+ Periodo +"", conecion());
             SqlDataReader reader = cmd.ExecuteReader();
         }
         public int CuentaUltima()
         {
-            SqlCommand cmd = new SqlCommand("exec UltimaCuenta", con.conecion());
+            SqlCommand cmd = new SqlCommand("exec UltimaCuenta", conecion());
             SqlDataReader reader = cmd.ExecuteReader();
 
             if (reader.Read())
             {
                 ultimaCuenta = int.Parse(reader["IdCuenta"].ToString());
             }
-            con.cerrar();
+            cerrar();
             return ultimaCuenta;
         }
 
